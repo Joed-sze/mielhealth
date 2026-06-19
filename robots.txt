@@ -1,8 +1,8 @@
 # Robots.txt for HANGZHOU AADON TRADING CO., LTD.
-# http://mielhealth.com
+# https://www.mielhealth.com
 
 User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: http://mielhealth.com/sitemap.xml
+Sitemap: https://www.mielhealth.com/sitemap.xml

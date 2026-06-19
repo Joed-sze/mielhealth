@@ -3,47 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- ========== SEO 核心修改 ========== -->
-    <title>Premium Bee Products & Beeswax Candles Supplier | Hangzhou Aadon Trading Co., Ltd.</title>
-    <meta name="description" content="Trusted Chinese supplier of premium royal jelly, propolis, honey & beeswax candles since 2004. Global export, factory direct prices. Request a quote today!">
-    <meta name="keywords" content="bee products, honey, royal jelly, propolis, beeswax candles, supplier, Hangzhou, China">
-    <meta name="robots" content="index, follow">
-    
-    <!-- ========== Open Graph 社交分享 ========== -->
-    <meta property="og:title" content="Premium Bee Products Supplier - Aadon Trading China">
-    <meta property="og:description" content="Trusted Chinese supplier of royal jelly, propolis, honey & beeswax candles since 2004.">
+    <meta name="description" content="Hangzhou Aadon Trading Co., Ltd. - Your trusted supplier of premium bee products and beeswax candles. Quality is our commitment.">
+    <meta name="keywords" content="bee products, beeswax candles, honey supplier, Hangzhou, trading company, natural products">
+    <meta name="author" content="HANGZHOU AADON TRADING CO., LTD.">
+    <meta property="og:title" content="HANGZHOU AADON TRADING CO., LTD.">
+    <meta property="og:description" content="Your trusted supplier of premium bee products and beeswax candles.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="http://mielhealth.com/">
-    
-    <!-- ========== 规范链接 ========== -->
-    <link rel="canonical" href="http://mielhealth.com/">
+    <meta property="og:image" content="banner-02.jpg">
+    <meta property="og:url" content="https://www.mielhealth.com">
+    <link rel="canonical" href="https://www.mielhealth.com/">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>HANGZHOU AADON TRADING CO., LTD.</title>
 
-    <!-- ========== JSON-LD 结构化数据 ========== -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Hangzhou Aadon Trading Co., Ltd.",
-      "description": "Premium Chinese bee products and beeswax candles supplier since 2004.",
-      "url": "http://mielhealth.com/",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+86-571-XXXXXXXX",
-        "contactType": "sales",
-        "availableLanguage": ["English", "Chinese"]
-      }
-    }
-    </script>
-
-    <!-- ========== 字体 ========== -->
+    <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
     <style>
-        *, *::before, *::after { box-sizing: border-box; }
+        /* === Reset & Global === */
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
 
         body {
             font-family: 'Inter', 'Lucida Sans Unicode', sans-serif;
@@ -54,7 +35,15 @@
             color: #1a4a1a;
         }
 
-        /* ===== 导航栏：居中 ===== */
+        /* === Header === */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        /* === Navigation === */
         nav {
             background-color: #507a0c;
             display: flex;
@@ -74,8 +63,11 @@
             transition: background-color 0.2s;
         }
 
-        nav a:hover { background-color: #456a09; }
+        nav a:hover {
+            background-color: #456a09;
+        }
 
+        /* Hamburger button (mobile only) */
         .nav-toggle {
             display: none;
             background: none;
@@ -92,12 +84,15 @@
             align-items: center;
         }
 
+        /* Dropdown */
         .dropdown {
             position: relative;
             display: inline-block;
         }
 
-        .dropdown > a { cursor: pointer; }
+        .dropdown > a {
+            cursor: pointer;
+        }
 
         .dropdown-content {
             display: none;
@@ -119,16 +114,16 @@
             font-weight: bold;
         }
 
-        .dropdown-content a:hover { background-color: #456a09; }
+        .dropdown-content a:hover {
+            background-color: #456a09;
+        }
 
         .dropdown:hover .dropdown-content,
         .dropdown:focus-within .dropdown-content {
             display: block;
         }
 
-        .banner-container { width: 100%; overflow: hidden; }
-        .banner-img { width: 100%; height: auto; display: block; }
-
+        /* === Container === */
         .container {
             width: 80%;
             max-width: 1200px;
@@ -138,69 +133,101 @@
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
 
-        .container h1 {
-            color: #2c3e50;
-            margin-top: 1.5rem;
-            font-size: 1.8rem;
-            text-align: center;
+        /* === Banner === */
+        .banner-container {
+            width: 100%;
+            overflow: hidden;
         }
 
-        .container p {
-            margin: 0.75rem 0;
-            color: #333;
-            text-align: left;
-        }
-
-        .home-img {
-            display: block;
-            max-width: 80%;
+        .banner-img {
+            width: 100%;
             height: auto;
-            margin: 1.5rem auto;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            display: block;
         }
 
-        .btn-quote {
-            display: inline-block;
-            padding: 14px 40px;
-            background-color: #507a0c;
-            color: white;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: bold;
-            transition: background-color 0.2s;
-        }
-        .btn-quote:hover {
-            background-color: #3a5e09;
+        /* === Cards Section === */
+        .cards-section {
+            padding: 3rem 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
-        .btn-wrapper {
+        .cards-section-title {
             text-align: center;
-            margin-top: 2rem;
+            font-size: 2rem;
+            color: #2c3e50;
+            margin-bottom: 2.5rem;
+            font-weight: 700;
         }
 
+        .cards-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .card {
+            flex: 1 1 calc(33.333% - 2rem);
+            min-width: 280px;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .card-body {
+            padding: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .card-body h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #0a3d3d;
+            margin: 0 0 0.75rem;
+        }
+
+        .card-body p {
+            color: #555;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* === Footer === */
         footer {
             text-align: center;
-            padding: 20px 10px;
+            padding: 3px;
             background-color: #456a09;
             color: white;
             margin-top: 3px;
         }
-        footer a {
-            color: white;
-            text-decoration: underline;
-        }
 
+        /* === Responsive === */
         @media (max-width: 768px) {
-            nav {
-                flex-direction: column;
-                align-items: flex-start;
-                padding: 0;
+            .banner-img {
+                max-height: 300px;
+                object-fit: contain;
             }
 
-            .banner-img { max-height: 300px; object-fit: contain; }
-
-            .nav-toggle { display: block; }
+            .nav-toggle {
+                display: block;
+            }
 
             .nav-links {
                 display: none;
@@ -208,12 +235,13 @@
                 width: 100%;
             }
 
-            .nav-links.active { display: flex; }
+            .nav-links.active {
+                display: flex;
+            }
 
-            nav a {
+            .nav-links a {
                 padding: 12px 20px;
                 border-top: 1px solid rgba(255,255,255,0.1);
-                width: 100%;
             }
 
             .dropdown-content {
@@ -222,29 +250,36 @@
                 background-color: #456a09;
             }
 
-            .dropdown-content a { padding-left: 40px; }
-
-            .home-img { max-width: 100%; }
-            
-            .container h1 { font-size: 1.4rem; }
+            .dropdown-content a {
+                padding-left: 40px;
+            }
         }
 
         @media (max-width: 480px) {
-            .banner-img { max-height: 200px; }
+            .banner-img {
+                max-height: 200px;
+            }
+
+            .cards-section-title {
+                font-size: 1.5rem;
+            }
         }
     </style>
 </head>
 <body>
 
+    <!-- Banner -->
     <div class="banner-container">
-        <img src="banner-02.jpg" class="banner-img" alt="Premium bee products and beeswax candles supplier from China" loading="lazy">
+        <img src="banner-02.jpg" class="banner-img" alt="HANGZHOU AADON TRADING CO., LTD. - Premium Bee Products Supplier" loading="lazy">
     </div>
 
+    <!-- Navigation -->
     <nav aria-label="Main navigation">
         <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">&#9776;</button>
-        
+
         <div class="nav-links">
             <a href="home.html">HOME</a>
+
             <div class="dropdown">
                 <a href="javascript:void(0)" aria-haspopup="true" aria-expanded="false">PRODUCTS &#9662;</a>
                 <div class="dropdown-content" role="menu">
@@ -252,50 +287,65 @@
                     <a href="beeswax candle.html" role="menuitem">Beeswax Candle</a>
                 </div>
             </div>
+
             <a href="about.html">ABOUT</a>
             <a href="contact.html">CONTACT</a>
         </div>
     </nav>
 
+    <!-- Main Content -->
     <main>
-        <div class="container">
-            <section>
-                <h1>Premium Bee Products &amp; Beeswax Candles Supplier</h1>
-                
-                <p>Welcome to <strong>HANGZHOU AADON TRADING CO., LTD.</strong> Since 2004, we have been dedicated to exporting high-quality bee products and premium beeswax candles to global markets. Our strict quality control systems ensure pure, dependable products that cater perfectly to international medical, dietary, and cultural traditions.</p>
-                
-                <img src="honey00.jpg" alt="Natural raw honey and royal jelly from Chinese bee products supplier" class="home-img" loading="lazy">
-                
-                <p>Explore our extensive range of natural honey, royal jelly, propolis, and meticulously manufactured candles crafted specifically to meet global industry benchmarks.</p>
+        <section class="cards-section">
+            <h2 class="cards-section-title">Welcome to HANGZHOU AADON TRADING CO., LTD.</h2>
 
-                <p>As a leading <strong>royal jelly supplier</strong> and <strong>natural honey exporter</strong> in China, we source our products directly from trusted apiaries across the country. Our <strong>propolis extract</strong> and <strong>beeswax candles</strong> are manufactured under strict GMP standards, ensuring consistent quality for international buyers.</p>
+            <div class="cards-wrapper">
+                <!-- Card 1 -->
+                <article class="card">
+                    <img src="quality.jpeg" alt="Quality assurance" loading="lazy">
+                    <div class="card-body">
+                        <h3>Quality is trust</h3>
+                        <p>This trust originates in our commitment to our customers and is maintained at every step by our unwavering adherence to standards, with every delivery serving to strengthen it.</p>
+                    </div>
+                </article>
 
-                <p>Whether you need bulk <strong>raw honey</strong> for food processing, <strong>royal jelly capsules</strong> for dietary supplements, or handcrafted <strong>beeswax candles</strong> for religious and decorative purposes, Aadon Trading delivers reliable solutions with competitive factory-direct pricing.</p>
+                <!-- Card 2 -->
+                <article class="card">
+                    <img src="supplier.jpeg" alt="Trusted supplier partnerships" loading="lazy">
+                    <div class="card-body">
+                        <h3>Trusted supplier</h3>
+                        <p>To ensure consistent quality and source control, we collaborate with our suppliers as long-term strategic partners, utilizing rigorous qualification audits, tiered management, on-site technical support.</p>
+                    </div>
+                </article>
 
-                <div class="btn-wrapper">
-                    <a href="contact.html" class="btn-quote">Request a Quote →</a>
-                </div>
-            </section>
-        </div>
+                <!-- Card 3 -->
+                <article class="card">
+                    <img src="value.png" alt="Customer value oriented" loading="lazy">
+                    <div class="card-body">
+                        <h3>Customer-value-oriented</h3>
+                        <p>We believe quality should transcend specs. It's measured by its ability to enable customer growth, driven by aligning every process and partnership with real market success.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
     </main>
 
+    <!-- Footer -->
     <footer>
-        <p>HANGZHOU AADON TRADING CO., LTD. &bull; Hangzhou, China &bull; <a href="contact.html">info@mielhealth.com</a></p>
-        <p>&copy; 2026 All Rights Reserved.</p>
+        <p>&copy; 2026 HANGZHOU AADON TRADING CO., LTD. All Rights Reserved.</p>
     </footer>
 
+    <!-- Hamburger Menu Script -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             var toggle = document.querySelector('.nav-toggle');
             var navLinks = document.querySelector('.nav-links');
-            
-            if (!toggle || !navLinks) return;
-            
+
             toggle.addEventListener('click', function () {
                 var isOpen = navLinks.classList.toggle('active');
                 toggle.setAttribute('aria-expanded', isOpen);
             });
-            
+
+            // Close menu when clicking outside
             document.addEventListener('click', function (e) {
                 if (!navLinks.contains(e.target) && !toggle.contains(e.target)) {
                     navLinks.classList.remove('active');
@@ -305,7 +355,67 @@
         });
     </script>
 
+    <!-- Tidio Chat Widget -->
     <script src="//code.tidio.co/yafy09blyzapqjpjpvf8k9b7hudh3dq8.js" async></script>
 
+    <!-- Structured Data - Organization -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "HANGZHOU AADON TRADING CO., LTD.",
+        "alternateName": "AADON Trading",
+        "url": "https://www.mielhealth.com",
+        "logo": "https://www.mielhealth.com/banner-02.jpg",
+        "description": "Premium bee products and beeswax candles supplier since 2004. We export natural honey, royal jelly, propolis, pollen, and beeswax candles worldwide.",
+        "foundingDate": "2004",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "ROOM 6457, NO. 99, MEIYUAN SOUTH STREET, ZHUANGTANG STREET",
+            "addressLocality": "XIHU DISTRICT",
+            "addressRegion": "HANGZHOU",
+            "postalCode": "",
+            "addressCountry": "CN"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "info@mielhealth.com",
+            "telephone": "+86-571-88394011",
+            "contactType": "sales",
+            "availableLanguage": ["English", "Chinese"]
+        }
+    }
+    </script>
+
+    <!-- Structured Data - Website -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "HANGZHOU AADON TRADING CO., LTD.",
+        "url": "https://www.mielhealth.com",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://www.mielhealth.com/contact.html",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+
+    <!-- Structured Data - BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.mielhealth.com/"
+            }
+        ]
+    }
+    </script>
 </body>
 </html>
