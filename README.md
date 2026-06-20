@@ -15,7 +15,7 @@ HANGZHOU AADON TRADING CO., LTD. is a specialized international trading company 
 ### Bee Products
 - **Honey** - Natural raw honey and retail-packaged honey in various floral varieties
 - **Royal Jelly** - Fresh royal jelly and freeze-dried royal jelly powder
-- **Propolis** - Refined propolis extract, clean propolis blocks, and water-soluble propolis powder
+- **Propolis** - Refined propolis extract, clean propolis blocks, and propolis powder with various content levels up to 60%
 - **Pollen** - Bee pollen for animal feeding, human consumption, and pollen powder
 - **Beeswax** - Refined beeswax blocks and easy-to-use beeswax pellets
 
@@ -46,10 +46,11 @@ HANGZHOU AADON TRADING CO., LTD. is a specialized international trading company 
 | Page | Description |
 |------|-------------|
 | [Home](index.html) | Company overview and core values |
-| [Bee Products](bee%20products.html) | Full range of natural bee products |
-| [Beeswax Candles](beeswax%20candle.html) | Beeswax-based candle collection |
+| [Bee Products](bee-products.html) | Full range of natural bee products |
+| [Beeswax Candles](beeswax-candles.html) | Beeswax-based candle collection |
 | [About Us](about.html) | Company history and expertise |
 | [Contact Us](contact.html) | Get in touch for inquiries and quotes |
+| [FAQ](faq.html) | Frequently asked questions |
 
 ## Technical
 
