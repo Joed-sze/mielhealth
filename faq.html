@@ -120,6 +120,18 @@
             display: block;
         }
 
+        /* === Banner === */
+        .banner-container {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .banner-img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
         /* === Container === */
         .container {
             width: 80%;
@@ -169,7 +181,6 @@
             border: 1px solid #e6dfd3;
             border-radius: 8px;
             overflow: hidden;
-            background: #ffffff;
         }
 
         .faq-question {
@@ -182,7 +193,6 @@
             justify-content: space-between;
             align-items: center;
             transition: background-color 0.2s;
-            user-select: none;
         }
 
         .faq-question:hover {
@@ -200,15 +210,16 @@
             content: '−';
         }
 
-        /* 修复后的手风琴动画样式，配合内嵌 Wrapper 实现丝滑收放 */
         .faq-answer {
+            padding: 0 1.5rem;
             max-height: 0;
             overflow: hidden;
-            transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            transition: max-height 0.3s ease, padding 0.3s ease;
         }
 
-        .faq-answer-inner {
+        .faq-item.active .faq-answer {
             padding: 1rem 1.5rem;
+            max-height: 500px;
         }
 
         .faq-answer p {
@@ -260,17 +271,13 @@
             background: #456a09;
         }
 
-        /* === Footer 修复：赋予合理的间距高度 === */
+        /* === Footer === */
         footer {
             text-align: center;
-            padding: 24px 0;
+            padding: 3px;
             background-color: #456a09;
             color: white;
-            margin-top: 40px;
-        }
-
-        footer p {
-            margin: 0;
+            margin-top: 3px;
         }
 
         /* === Responsive === */
@@ -326,6 +333,11 @@
 </head>
 <body>
 
+    <!-- Banner -->
+    <div class="banner-container">
+        <img src="banner-02.jpg" class="banner-img" alt="FAQ - HANGZHOU AADON TRADING CO., LTD." loading="lazy">
+    </div>
+
     <!-- Navigation -->
     <nav aria-label="Main navigation">
         <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">&#9776;</button>
@@ -360,36 +372,28 @@
                 <div class="faq-item">
                     <div class="faq-question">What is HANGZHOU AADON TRADING CO., LTD.?</div>
                     <div class="faq-answer">
-                        <div class="faq-answer-inner">
-                            <p>HANGZHOU AADON TRADING CO., LTD. is a specialized international trading company based in Hangzhou, China. Since 2004, we have been exporting high-quality natural bee products and beeswax candles to clients worldwide. Our product range covers raw materials for the food, health supplement, cosmetics, and candle manufacturing industries.</p>
-                        </div>
+                        <p>HANGZHOU AADON TRADING CO., LTD. is a specialized international trading company based in Hangzhou, China. Since 2004, we have been exporting high-quality natural bee products and beeswax candles to clients worldwide. Our product range covers raw materials for the food, health supplement, cosmetics, and candle manufacturing industries.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <div class="faq-question">Where are you located?</div>
                     <div class="faq-answer">
-                        <div class="faq-answer-inner">
-                            <p>Our office is located at ROOM 6457, NO. 99, MEIYUAN SOUTH STREET, ZHUANGTANG STREET, XIHU DISTRICT, HANGZHOU, ZHEJIANG, CHINA. Hangzhou is conveniently located near Shanghai and Ningbo, two of China's most important international ports, ensuring efficient shipping logistics for our global customers.</p>
-                        </div>
+                        <p>Our office is located at ROOM 6457, NO. 99, MEIYUAN SOUTH STREET, ZHUANGTANG STREET, XIHU DISTRICT, HANGZHOU, ZHEJIANG, CHINA. Hangzhou is conveniently located near Shanghai and Ningbo, two of China's most important international ports, ensuring efficient shipping logistics for our global customers.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <div class="faq-question">How long have you been in business?</div>
                     <div class="faq-answer">
-                        <div class="faq-answer-inner">
-                            <p>We have been in business since 2004, giving us over 20 years of experience in the bee products and beeswax candles export industry. Our long-standing relationships with suppliers and customers are a testament to our reliability and quality standards.</p>
-                        </div>
+                        <p>We have been in business since 2004, giving us over 20 years of experience in the bee products and beeswax candles export industry. Our long-standing relationships with suppliers and customers are a testament to our reliability and quality standards.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <div class="faq-question">What markets do you serve?</div>
                     <div class="faq-answer">
-                        <div class="faq-answer-inner">
-                            <p>We export our products to customers worldwide. Our clients include importers, retailers, and manufacturers in the food, health supplement, cosmetics, and candle industries across North America, Europe, Asia, and the Middle East.</p>
-                        </div>
+                        <p>We export our products to customers worldwide. Our clients include importers, retailers, and manufacturers in the food, health supplement, cosmetics, and candle industries across North America, Europe, Asia, and the Middle East.</p>
                     </div>
                 </div>
             </div>
@@ -401,45 +405,35 @@
                 <div class="faq-item">
                     <div class="faq-question">What bee products do you offer?</div>
                     <div class="faq-answer">
-                        <div class="faq-answer-inner">
-                            <p>We offer a comprehensive range of bee products including: Natural Honey (raw and retail-packaged), Royal Jelly (fresh and freeze-dried powder), Propolis (refined extract, clean blocks, and propolis powder with various content levels up to 60%), Bee Pollen (for animal feeding, human consumption, and powder form), and Refined Beeswax (blocks and pellets). Visit our <a href="bee-products.html">Bee Products page</a> for more details.</p>
-                        </div>
+                        <p>We offer a comprehensive range of bee products including: Natural Honey (raw and retail-packaged), Royal Jelly (fresh and freeze-dried powder), Propolis (refined extract, clean blocks, and propolis powder with various content levels up to 60%), Bee Pollen (for animal feeding, human consumption, and powder form), and Refined Beeswax (blocks and pellets). Visit our <a href="bee-products.html">Bee Products page</a> for more details.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <div class="faq-question">What types of beeswax candles do you manufacture?</div>
                     <div class="faq-answer">
-                        <div class="faq-answer-inner">
-                            <p>Our beeswax candle collection includes: Glass Candles, Handroll Candles, T-Light Candles, Braid Candles, Chanukah Candles, and Hanukkah Candles. All our candles are made from 100% natural beeswax, ensuring clean burning and long-lasting performance. View our full range on the <a href="beeswax-candles.html">Beeswax Candles page</a>.</p>
-                        </div>
+                        <p>Our beeswax candle collection includes: Glass Candles, Handroll Candles, T-Light Candles, Braid Candles, Chanukah Candles, and Hanukkah Candles. All our candles are made from 100% natural beeswax, ensuring clean burning and long-lasting performance. View our full range on the <a href="beeswax-candles.html">Beeswax Candles page</a>.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <div class="faq-question">Are your products natural and pure?</div>
                     <div class="faq-answer">
-                        <div class="faq-answer-inner">
-                            <p>Yes, all our bee products are 100% natural and pure. We work closely with our suppliers to ensure that our honey, royal jelly, propolis, and pollen are sourced from clean, unpolluted environments. Our beeswax candles are made from pure beeswax without any additives or synthetic materials.</p>
-                        </div>
+                        <p>Yes, all our bee products are 100% natural and pure. We work closely with our suppliers to ensure that our honey, royal jelly, propolis, and pollen are sourced from clean, unpolluted environments. Our beeswax candles are made from pure beeswax without any additives or synthetic materials.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <div class="faq-question">Do you provide organic certified products?</div>
                     <div class="faq-answer">
-                        <div class="faq-answer-inner">
-                            <p>Yes, our partner factories can provide organic certifications. We work with certified organic suppliers who hold EU Organic and NOP (USDA National Organic Program) certifications. Please contact us with your specific organic requirements.</p>
-                        </div>
+                        <p>Yes, our partner factories can provide organic certifications. We work with certified organic suppliers who hold EU Organic and NOP (USDA National Organic Program) certifications. Please contact us with your specific organic requirements.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <div class="faq-question">Can I request custom packaging?</div>
                     <div class="faq-answer">
-                        <div class="faq-answer-inner">
-                            <p>Yes, we offer custom packaging solutions for bulk orders. Whether you need private labeling, specific container sizes, or branded packaging, we can accommodate your requirements. Minimum order quantities apply for custom packaging. Please contact us to discuss your specific needs.</p>
-                        </div>
+                        <p>Yes, we offer custom packaging solutions for bulk orders. Whether you need private labeling, specific container sizes, or branded packaging, we can accommodate your requirements. Minimum order quantities apply for custom packaging. Please contact us to discuss your specific needs.</p>
                     </div>
                 </div>
             </div>
@@ -451,27 +445,21 @@
                 <div class="faq-item">
                     <div class="faq-question">What quality control measures do you have?</div>
                     <div class="faq-answer">
-                        <div class="faq-answer-inner">
-                            <p>We implement strict quality control at every stage: supplier qualification audits, raw material testing, production monitoring, and pre-shipment inspection. We collaborate with our suppliers as long-term strategic partners, utilizing tiered management and on-site technical support to ensure consistent quality.</p>
-                        </div>
+                        <p>We implement strict quality control at every stage: supplier qualification audits, raw material testing, production monitoring, and pre-shipment inspection. We collaborate with our suppliers as long-term strategic partners, utilizing tiered management and on-site technical support to ensure consistent quality.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <div class="faq-question">What certifications do your products have?</div>
                     <div class="faq-answer">
-                        <div class="faq-answer-inner">
-                            <p>Our partner factories hold the following certifications: HACCP (Hazard Analysis and Critical Control Points), ISO 9001 (Quality Management System), KOSHER, HALAL, EU Organic Certification, and NOP (USDA National Organic Program) Certification. Specific certification availability may vary by product.</p>
-                        </div>
+                        <p>Our partner factories hold the following certifications: HACCP (Hazard Analysis and Critical Control Points), ISO 9001 (Quality Management System), KOSHER, HALAL, EU Organic Certification, and NOP (USDA National Organic Program) Certification. Specific certification availability may vary by product.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <div class="faq-question">Do you provide product samples?</div>
                     <div class="faq-answer">
-                        <div class="faq-answer-inner">
-                            <p>Yes, we provide product samples for serious buyers. Sample costs and shipping fees may apply depending on the product type and destination. Sample orders are a great way to evaluate our product quality before placing a bulk order. Contact us to request samples.</p>
-                        </div>
+                        <p>Yes, we provide product samples for serious buyers. Sample costs and shipping fees may apply depending on the product type and destination. Sample orders are a great way to evaluate our product quality before placing a bulk order. Contact us to request samples.</p>
                     </div>
                 </div>
             </div>
@@ -483,45 +471,35 @@
                 <div class="faq-item">
                     <div class="faq-question">What is your minimum order quantity (MOQ)?</div>
                     <div class="faq-answer">
-                        <div class="faq-answer-inner">
-                            <p>Minimum order quantities vary by product. For bee products, MOQ starts from 100kg. For candles, our MOQ is 500 pieces/boxes. However, we are flexible and can discuss smaller quantities for trial orders.</p>
-                        </div>
+                        <p>Minimum order quantities vary by product. For bee products, MOQ starts from 100kg. For candles, our MOQ is 500 pieces/boxes. However, we are flexible and can discuss smaller quantities for trial orders.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <div class="faq-question">What are your payment terms?</div>
                     <div class="faq-answer">
-                        <div class="faq-answer-inner">
-                            <p>Our standard payment terms are T/T (Telegraphic Transfer) with 50% deposit and 50% balance before shipment. For long-term partners, we can discuss more flexible payment arrangements. We also accept L/C (Letter of Credit) for large orders.</p>
-                        </div>
+                        <p>Our standard payment terms are T/T (Telegraphic Transfer) with 50% deposit and 50% balance before shipment. For long-term partners, we can discuss more flexible payment arrangements. We also accept L/C (Letter of Credit) for large orders.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <div class="faq-question">How long is the delivery time?</div>
                     <div class="faq-answer">
-                        <div class="faq-answer-inner">
-                            <p>Under normal circumstances, delivery takes 20-35 days after order confirmation. The exact timeline depends on the product type, order quantity, and destination port. We will provide a detailed delivery schedule when you place your order.</p>
-                        </div>
+                        <p>Under normal circumstances, delivery takes 20-35 days after order confirmation. The exact timeline depends on the product type, order quantity, and destination port. We will provide a detailed delivery schedule when you place your order.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <div class="faq-question">What shipping methods do you use?</div>
                     <div class="faq-answer">
-                        <div class="faq-answer-inner">
-                            <p>We primarily use sea freight for bulk orders due to cost-effectiveness. For urgent or small orders, we can arrange air freight. We work with reliable freight forwarders to ensure safe and timely delivery to your designated port or warehouse.</p>
-                        </div>
+                        <p>We primarily use sea freight for bulk orders due to cost-effectiveness. For urgent or small orders, we can arrange air freight. We work with reliable freight forwarders to ensure safe and timely delivery to your designated port or warehouse.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <div class="faq-question">Do you handle customs documentation?</div>
                     <div class="faq-answer">
-                        <div class="faq-answer-inner">
-                            <p>Yes, we provide all necessary export documentation including commercial invoice, packing list, certificate of origin, and health certificates where required. We ensure that all documentation complies with the import regulations of your country.</p>
-                        </div>
+                        <p>Yes, we provide all necessary export documentation including commercial invoice, packing list, certificate of origin, and health certificates where required. We ensure that all documentation complies with the import regulations of your country.</p>
                     </div>
                 </div>
             </div>
@@ -533,27 +511,21 @@
                 <div class="faq-item">
                     <div class="faq-question">How can I get a quote?</div>
                     <div class="faq-answer">
-                        <div class="faq-answer-inner">
-                            <p>You can request a quote by filling out the form on our <a href="contact.html">Contact page</a>, sending an email to <a href="mailto:shijd@mielhealth.com">shijd@mielhealth.com</a>, or calling us at +86 571 88394011. Please include the product name, quantity, and destination port for an accurate quote.</p>
-                        </div>
+                        <p>You can request a quote by filling out the form on our <a href="contact.html">Contact page</a>, sending an email to <a href="mailto:shijd@mielhealth.com">shijd@mielhealth.com</a>, or calling us at +86 571 88394011. Please include the product name, quantity, and destination port for an accurate quote.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <div class="faq-question">What is your response time for inquiries?</div>
                     <div class="faq-answer">
-                        <div class="faq-answer-inner">
-                            <p>We aim to respond to all inquiries within 24 hours during business days. For complex quotes or custom orders, it may take 2-3 business days to provide a detailed proposal. Our team is committed to providing prompt and professional service.</p>
-                        </div>
+                        <p>We aim to respond to all inquiries within 24 hours during business days. For complex quotes or custom orders, it may take 2-3 business days to provide a detailed proposal. Our team is committed to providing prompt and professional service.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <div class="faq-question">Do you offer after-sales support?</div>
                     <div class="faq-answer">
-                        <div class="faq-answer-inner">
-                            <p>Yes, we provide comprehensive after-sales support. If you have any issues with product quality, delivery, or documentation, our team is ready to assist you. We value long-term relationships with our customers and strive to resolve any concerns promptly.</p>
-                        </div>
+                        <p>Yes, we provide comprehensive after-sales support. If you have any issues with product quality, delivery, or documentation, our team is ready to assist you. We value long-term relationships with our customers and strive to resolve any concerns promptly.</p>
                     </div>
                 </div>
             </div>
@@ -572,10 +544,9 @@
         <p>&copy; 2026 HANGZHOU AADON TRADING CO., LTD. All Rights Reserved.</p>
     </footer>
 
-    <!-- Hamburger Menu & Smooth Dynamic Accordion Script -->
+    <!-- Hamburger Menu Script -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            // Mobile navigation toggle
             var toggle = document.querySelector('.nav-toggle');
             var navLinks = document.querySelector('.nav-links');
 
@@ -591,32 +562,12 @@
                 }
             });
 
-            // Smooth Exclusive Accordion logic
+            // FAQ Accordion
             var faqItems = document.querySelectorAll('.faq-item');
-            
             faqItems.forEach(function(item) {
                 var question = item.querySelector('.faq-question');
-                var answer = item.querySelector('.faq-answer');
-
                 question.addEventListener('click', function() {
-                    var isActive = item.classList.contains('active');
-
-                    // Close all other open items
-                    faqItems.forEach(function(otherItem) {
-                        if (otherItem !== item && otherItem.classList.contains('active')) {
-                            otherItem.classList.remove('active');
-                            otherItem.querySelector('.faq-answer').style.maxHeight = '0px';
-                        }
-                    });
-
-                    // Toggle current item
-                    if (!isActive) {
-                        item.classList.add('active');
-                        answer.style.maxHeight = answer.scrollHeight + "px";
-                    } else {
-                        item.classList.remove('active');
-                        answer.style.maxHeight = '0px';
-                    }
+                    item.classList.toggle('active');
                 });
             });
         });
@@ -625,7 +576,7 @@
     <!-- Tidio Chat Widget -->
     <script src="//code.tidio.co/yafy09blyzapqjpjpvf8k9b7hudh3dq8.js" async></script>
 
-    <!-- Structured Data - FAQPage (Synced with latest text changes) -->
+    <!-- Structured Data - FAQPage -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
