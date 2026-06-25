@@ -9,7 +9,7 @@
     <meta property="og:title" content="Blog & Industry Insights - MielHealth">
     <meta property="og:description" content="Expert guides and industry insights on importing bee products from China. Tips, regulations, quality standards, and market trends for international buyers.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="banner-02.jpg">
+    <meta property="og:image" content="https://www.mielhealth.com/banner-02.jpg">
     <meta property="og:url" content="https://www.mielhealth.com/blog.html">
     <link rel="canonical" href="https://www.mielhealth.com/blog.html">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -45,7 +45,7 @@
 
         /* === Navigation === */
         nav {
-            background-color: #507a0c;
+            background-color: #456a09;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -64,7 +64,7 @@
         }
 
         nav a:hover {
-            background-color: #456a09;
+            background-color: #3a5a07;
         }
 
         /* Hamburger button (mobile only) */
@@ -97,7 +97,7 @@
         .dropdown-content {
             display: none;
             position: absolute;
-            background-color: #507a0c;
+            background-color: #456a09;
             min-width: 180px;
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
             z-index: 100;
@@ -115,7 +115,7 @@
         }
 
         .dropdown-content a:hover {
-            background-color: #456a09;
+            background-color: #3a5a07;
         }
 
         .dropdown:hover .dropdown-content,
@@ -131,20 +131,6 @@
             padding: 20px;
             background-color: white;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-
-        /* === Banner === */
-        .banner-container {
-            width: 100%;
-            overflow: hidden;
-            background-color: #507a0c;
-            color: #ffffff;
-        }
-
-        .banner-img {
-            width: 100%;
-            height: auto;
-            display: block;
         }
 
         /* === Blog Page Styles === */
@@ -168,86 +154,28 @@
             line-height: 1.7;
         }
 
-        /* Breadcrumb */
-        .breadcrumb {
-            padding: 0.75rem 1rem;
-            font-size: 0.85rem;
-            color: #333;
-        }
-
-        .breadcrumb a {
-            color: #507a0c;
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        .breadcrumb a:hover {
-            text-decoration: underline;
-        }
-
-        /* Blog Cards Grid */
+        /* Blog Cards Grid - Trust Item Style */
         .blog-grid {
             display: grid;
             grid-template-columns: 1fr;
-            gap: 2rem;
+            gap: 1.5rem;
             padding: 1.5rem 1rem 2rem;
             max-width: 900px;
             margin: 0 auto;
         }
 
-        /* Blog Article Card */
         .blog-card {
             background: white;
+            padding: 1.5rem;
             border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-            display: flex;
-            flex-direction: row;
+            border-left: 4px solid #507a0c;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
             transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
 
         .blog-card:hover {
             transform: translateY(-4px);
             box-shadow: 0 8px 24px rgba(0,0,0,0.12);
-        }
-
-        .blog-card-image {
-            width: 320px;
-            min-height: 220px;
-            flex-shrink: 0;
-            background: linear-gradient(135deg, #f5a623 0%, #e8913a 25%, #d4a017 50%, #8B6914 75%, #507a0c 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .blog-card-image::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background:
-                radial-gradient(circle at 20% 30%, rgba(255,255,255,0.2) 0%, transparent 50%),
-                radial-gradient(circle at 80% 70%, rgba(255,255,255,0.15) 0%, transparent 40%);
-        }
-
-        .blog-card-image::after {
-            content: '\01F41D';
-            font-size: 3rem;
-            position: relative;
-            z-index: 1;
-            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
-        }
-
-        .blog-card-content {
-            padding: 1.5rem;
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
         }
 
         .blog-card-meta {
@@ -287,9 +215,8 @@
         .blog-card-description {
             font-size: 0.95rem;
             color: #555;
-            line-height: 1.6;
+            line-height: 1.7;
             margin: 0 0 1.25rem;
-            flex-grow: 1;
         }
 
         .blog-card-link {
@@ -302,7 +229,6 @@
             font-weight: 600;
             font-size: 0.9rem;
             transition: background-color 0.2s, transform 0.15s;
-            align-self: flex-start;
         }
 
         .blog-card-link:hover {
@@ -321,11 +247,6 @@
 
         /* === Responsive === */
         @media (max-width: 768px) {
-            .banner-img {
-                max-height: 300px;
-                object-fit: contain;
-            }
-
             .nav-toggle {
                 display: block;
             }
@@ -355,25 +276,12 @@
                 padding-left: 40px;
             }
 
-            .blog-card {
-                flex-direction: column;
-            }
-
-            .blog-card-image {
-                width: 100%;
-                min-height: 180px;
-            }
-
             .blog-header h1 {
                 font-size: 1.6rem;
             }
         }
 
         @media (max-width: 480px) {
-            .banner-img {
-                max-height: 200px;
-            }
-
             .blog-header h1 {
                 font-size: 1.4rem;
             }
@@ -381,19 +289,10 @@
             .blog-card-title {
                 font-size: 1.15rem;
             }
-
-            .blog-card-content {
-                padding: 1rem;
-            }
         }
     </style>
 </head>
 <body>
-
-    <!-- Banner -->
-    <div class="banner-container">
-        <img src="banner-02.jpg" class="banner-img" alt="MielHealth - Blog & Industry Insights" loading="lazy">
-    </div>
 
     <!-- Navigation -->
     <nav aria-label="Main navigation">
@@ -431,32 +330,26 @@
 
                 <!-- Article Card 1 -->
                 <article class="blog-card">
-                    <div class="blog-card-image" role="img" aria-label="Honey and bee themed illustration"></div>
-                    <div class="blog-card-content">
-                        <div class="blog-card-meta">
-                            <span class="blog-card-category">Import Guide</span>
-                            <span class="blog-card-date">June 21, 2026</span>
-                            <span class="blog-card-reading-time">12 min read</span>
-                        </div>
-                        <h2 class="blog-card-title">How to Import Bee Products from China: A Complete Guide for Buyers</h2>
-                        <p class="blog-card-description">Navigate the entire import process for Chinese bee products with confidence. This comprehensive guide covers regulatory requirements, quality certifications, supplier evaluation, shipping logistics, and negotiation strategies to help you source honey, royal jelly, propolis, and beeswax at competitive prices.</p>
-                        <a href="blog/how-to-import-bee-products-from-china.html" class="blog-card-link">Read More</a>
+                    <div class="blog-card-meta">
+                        <span class="blog-card-category">Import Guide</span>
+                        <span class="blog-card-date">June 21, 2026</span>
+                        <span class="blog-card-reading-time">12 min read</span>
                     </div>
+                    <h2 class="blog-card-title">How to Import Bee Products from China: A Complete Guide for Buyers</h2>
+                    <p class="blog-card-description">Navigate the entire import process for Chinese bee products with confidence. This comprehensive guide covers regulatory requirements, quality certifications, supplier evaluation, shipping logistics, and negotiation strategies to help you source honey, royal jelly, propolis, and beeswax at competitive prices.</p>
+                    <a href="blog/how-to-import-bee-products-from-china.html" class="blog-card-link">Read More</a>
                 </article>
 
                 <!-- Article Card 2 -->
                 <article class="blog-card">
-                    <div class="blog-card-image" role="img" aria-label="Royal jelly and honeycomb themed illustration" style="background: linear-gradient(135deg, #f5e6a3, #d4a843, #507a0c);"></div>
-                    <div class="blog-card-content">
-                        <div class="blog-card-meta">
-                            <span class="blog-card-category">Product Guide</span>
-                            <span class="blog-card-date">June 22, 2026</span>
-                            <span class="blog-card-reading-time">8 min read</span>
-                        </div>
-                        <h2 class="blog-card-title">How to Import Royal Jelly from China: A Complete Buyer's Guide</h2>
-                        <p class="blog-card-description">Everything you need to know about sourcing royal jelly from China. Compare fresh vs. lyophilized powder, understand 10-HDA quality markers, and discover low-MOQ DHL shipping options starting at just 30kg. Includes COA parameters, cold chain requirements, and common buyer mistakes.</p>
-                        <a href="blog/how-to-import-royal-jelly-from-china.html" class="blog-card-link">Read More</a>
+                    <div class="blog-card-meta">
+                        <span class="blog-card-category">Product Guide</span>
+                        <span class="blog-card-date">June 22, 2026</span>
+                        <span class="blog-card-reading-time">8 min read</span>
                     </div>
+                    <h2 class="blog-card-title">How to Import Royal Jelly from China: A Complete Buyer's Guide</h2>
+                    <p class="blog-card-description">Everything you need to know about sourcing royal jelly from China. Compare fresh vs. lyophilized powder, understand 10-HDA quality markers, and discover low-MOQ DHL shipping options starting at just 30kg. Includes COA parameters, cold chain requirements, and common buyer mistakes.</p>
+                    <a href="blog/how-to-import-royal-jelly-from-china.html" class="blog-card-link">Read More</a>
                 </article>
 
             </div>
