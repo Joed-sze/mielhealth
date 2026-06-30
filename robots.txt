@@ -1,8 +1,13 @@
-# Robots.txt for HANGZHOU AADON TRADING CO., LTD.
-# https://www.mielhealth.com
+# robots.txt for Chinese Name Spirit
 
+# Allow all crawlers
 User-agent: *
-Allow: /
 
 # Sitemap location
-Sitemap: https://www.mielhealth.com/sitemap.xml
+Sitemap: https://joed-sze.github.io/chinese-name-spirit/sitemap.xml
+
+# Allow crawling of all pages
+Allow: /
+
+# Crawl delay (be nice to the server)
+Crawl-delay: 1
