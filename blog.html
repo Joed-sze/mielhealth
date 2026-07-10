@@ -3,28 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Expert guides and industry insights on importing bee products from China. Tips, regulations, quality standards, and market trends for international buyers.">
-    <meta name="keywords" content="bee products blog, import bee products China, honey import guide, royal jelly wholesale, propolis sourcing, beeswax candle manufacturing">
+    <meta name="description" content="Buyer's guides and industry insights on importing bee products from China — honey, royal jelly, propolis, bee pollen, beeswax and beeswax candles.">
+    <meta name="keywords" content="bee products blog, import guide China, royal jelly buyer guide, beeswax wholesale, propolis sourcing, honey quality testing">
     <meta name="author" content="HANGZHOU AADON TRADING CO., LTD.">
-    <meta property="og:title" content="Blog & Industry Insights - MielHealth">
-    <meta property="og:description" content="Expert guides and industry insights on importing bee products from China. Tips, regulations, quality standards, and market trends for international buyers.">
+    <meta property="og:title" content="Blog — Buyer's Guides & Industry Insights | Aadon Trading">
+    <meta property="og:description" content="Expert guides on importing bee products from China — honey, royal jelly, propolis, bee pollen, beeswax and beeswax candles.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://www.mielhealth.com/banner-02.jpg">
     <meta property="og:url" content="https://www.mielhealth.com/blog.html">
     <link rel="canonical" href="https://www.mielhealth.com/blog.html">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <title>Blog & Industry Insights - MielHealth</title>
+    <title>Blog — Buyer's Guides & Industry Insights | Aadon Trading</title>
 
-    <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
     <style>
         /* === Reset & Global === */
-        *, *::before, *::after {
-            box-sizing: border-box;
-        }
+        *, *::before, *::after { box-sizing: border-box; }
 
         body {
             font-family: 'Inter', 'Lucida Sans Unicode', sans-serif;
@@ -33,14 +29,6 @@
             padding: 0;
             background-color: #fff9f0;
             color: #1a4a1a;
-        }
-
-        /* === Header === */
-        header {
-            background-color: #333;
-            color: white;
-            padding: 1rem 0;
-            text-align: center;
         }
 
         /* === Navigation === */
@@ -67,7 +55,6 @@
             background-color: #3a5a07;
         }
 
-        /* Hamburger button (mobile only) */
         .nav-toggle {
             display: none;
             background: none;
@@ -84,15 +71,12 @@
             align-items: center;
         }
 
-        /* Dropdown */
         .dropdown {
             position: relative;
             display: inline-block;
         }
 
-        .dropdown > a {
-            cursor: pointer;
-        }
+        .dropdown > a { cursor: pointer; }
 
         .dropdown-content {
             display: none;
@@ -128,54 +112,52 @@
             width: 80%;
             max-width: 1200px;
             margin: 20px auto;
-            padding: 20px;
+            padding: 40px 30px;
             background-color: white;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
 
-        /* === Blog Page Styles === */
-        .blog-header {
-            text-align: center;
-            padding: 2rem 1rem 1rem;
+        /* === Blog Page Header === */
+        .blog-page-header {
+            margin-bottom: 2rem;
         }
 
-        .blog-header h1 {
-            font-size: 2.2rem;
+        .blog-page-header h1 {
+            font-size: 1.9rem;
             font-weight: 700;
-            color: #2c3e50;
-            margin: 0 0 0.75rem;
+            color: #1a4a1a;
+            margin: 0 0 0.5rem;
+            line-height: 1.3;
         }
 
-        .blog-header p {
+        .blog-page-header p {
+            color: #666;
             font-size: 1.05rem;
-            color: #555;
-            max-width: 700px;
-            margin: 0 auto;
-            line-height: 1.7;
+            margin: 0;
         }
 
-        /* Blog Cards Grid - Latest 4 Articles */
+        /* === Blog Grid (2-column cards) === */
         .blog-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 1.5rem;
-            padding: 1.5rem 1rem 2rem;
             max-width: 1100px;
-            margin: 0 auto;
+            margin: 0 auto 2.5rem;
         }
 
         .blog-card {
             background: white;
-            padding: 1.5rem;
-            border-radius: 8px;
             border-left: 4px solid #507a0c;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
             transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
 
         .blog-card:hover {
             transform: translateY(-4px);
-            box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.12);
         }
 
         .blog-card-meta {
@@ -186,40 +168,45 @@
             flex-wrap: wrap;
         }
 
-        .blog-card-category {
-            display: inline-block;
+        .blog-card-meta time {
+            font-size: 0.85rem;
+            color: #999;
+        }
+
+        .blog-card-meta .read-time {
+            font-size: 0.85rem;
+            color: #999;
+        }
+
+        .category-badge {
             background-color: #507a0c;
             color: white;
             font-size: 0.75rem;
-            font-weight: 600;
-            padding: 3px 12px;
+            padding: 3px 10px;
             border-radius: 50px;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
+            font-weight: 600;
+            display: inline-block;
+            white-space: nowrap;
         }
 
-        .blog-card-date,
-        .blog-card-reading-time {
-            font-size: 0.85rem;
-            color: #888;
-        }
-
-        .blog-card-title {
-            font-size: 1.35rem;
+        .blog-card h2 {
+            font-size: 1.25rem;
             font-weight: 700;
-            color: #2c3e50;
+            color: #1a4a1a;
             margin: 0 0 0.75rem;
             line-height: 1.4;
         }
 
-        .blog-card-description {
-            font-size: 0.95rem;
+        .blog-card p {
             color: #555;
+            font-size: 0.95rem;
             line-height: 1.7;
             margin: 0 0 1.25rem;
+            flex-grow: 1;
         }
 
-        .blog-card-link {
+        .blog-card .read-more {
             display: inline-block;
             background-color: #507a0c;
             color: white;
@@ -228,95 +215,90 @@
             border-radius: 6px;
             font-weight: 600;
             font-size: 0.9rem;
-            transition: background-color 0.2s, transform 0.15s;
+            transition: background-color 0.2s;
+            align-self: flex-start;
         }
 
-        .blog-card-link:hover {
-            background-color: #456a09;
-            transform: translateY(-1px);
+        .blog-card .read-more:hover {
+            background-color: #3a5a07;
         }
 
-        /* Older Articles - Title List */
-        .blog-older-heading {
+        /* === Older Articles Section === */
+        .older-articles-heading {
             font-size: 1.1rem;
             font-weight: 700;
-            color: #2c3e50;
             text-transform: uppercase;
             letter-spacing: 0.05em;
-            margin: 0.5rem 0 0;
-            padding-top: 1.5rem;
+            color: #1a4a1a;
             border-top: 2px solid #e6dfd3;
-            padding-left: 1rem;
-        }
-
-        .blog-list {
-            list-style: none;
-            padding: 0;
-            margin: 0;
+            padding-top: 1.5rem;
+            margin: 0 0 1rem;
             max-width: 1100px;
             margin-left: auto;
             margin-right: auto;
         }
 
-        .blog-list-item {
+        /* === Blog List === */
+        .blog-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .blog-list li {
             display: flex;
             align-items: center;
             gap: 1rem;
-            padding: 1rem 1rem;
+            padding: 0.85rem 0.5rem;
             border-bottom: 1px solid #f0ebe3;
             transition: background-color 0.15s;
-            text-decoration: none;
-            color: inherit;
         }
 
-        .blog-list-item:hover {
+        .blog-list li:hover {
             background-color: #f8f6f0;
         }
 
-        .blog-list-item:last-child {
+        .blog-list li:last-child {
             border-bottom: none;
         }
 
-        .blog-list-date {
-            font-size: 0.8rem;
+        .blog-list .list-date {
+            font-size: 0.85rem;
             color: #999;
             white-space: nowrap;
-            min-width: 90px;
+            min-width: 70px;
         }
 
-        .blog-list-category {
-            display: inline-block;
-            background-color: #507a0c;
-            color: white;
+        .blog-list .list-badge {
             font-size: 0.65rem;
-            font-weight: 600;
             padding: 2px 8px;
-            border-radius: 50px;
-            text-transform: uppercase;
-            letter-spacing: 0.4px;
-            white-space: nowrap;
+            min-width: auto;
         }
 
-        .blog-list-title {
+        .blog-list .list-title a {
             font-size: 1rem;
             font-weight: 600;
-            color: #2c3e50;
+            color: #1a4a1a;
+            text-decoration: none;
+            flex-grow: 1;
             line-height: 1.4;
-            margin: 0;
-            flex: 1;
+            transition: color 0.2s;
         }
 
-        .blog-list-item:hover .blog-list-title {
+        .blog-list .list-title a:hover {
             color: #507a0c;
         }
 
-        .blog-list-arrow {
+        .blog-list .list-arrow {
             color: #bbb;
-            font-size: 1rem;
-            transition: color 0.15s, transform 0.15s;
+            font-size: 1.1rem;
+            transition: color 0.2s, transform 0.2s;
+            flex-shrink: 0;
         }
 
-        .blog-list-item:hover .blog-list-arrow {
+        .blog-list li:hover .list-arrow {
             color: #507a0c;
             transform: translateX(3px);
         }
@@ -327,10 +309,45 @@
             padding: 3px;
             background-color: #456a09;
             color: white;
+            border-top: 3px solid rgba(255,255,255,0.3);
             margin-top: 3px;
         }
 
-        /* === Responsive === */
+        /* === Back to Top Button === */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background-color: #507a0c;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            line-height: 1;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            transition: background-color 0.2s, opacity 0.3s;
+            opacity: 0;
+            z-index: 999;
+            text-decoration: none;
+            padding: 0;
+        }
+
+        .back-to-top:hover {
+            background-color: #3a5a07;
+        }
+
+        .back-to-top.visible {
+            display: flex;
+            opacity: 1;
+        }
+
+        /* === Responsive: 768px === */
         @media (max-width: 768px) {
             .nav-toggle {
                 display: block;
@@ -365,66 +382,30 @@
                 grid-template-columns: 1fr;
             }
 
-            .blog-header h1 {
-                font-size: 1.6rem;
-            }
-
-            .blog-list-item {
+            .blog-list li {
                 flex-wrap: wrap;
-                gap: 0.5rem;
-                padding: 0.8rem 0.5rem;
             }
 
-            .blog-list-date {
-                min-width: auto;
-            }
-
-            .blog-list-title {
+            .blog-list .list-title {
                 width: 100%;
+            }
+
+            .container {
+                width: 95%;
+                padding: 30px 20px;
             }
         }
 
+        /* === Responsive: 480px === */
         @media (max-width: 480px) {
-            .blog-header h1 {
+            .blog-page-header h1 {
                 font-size: 1.4rem;
             }
 
-            .blog-card-title {
+            .blog-card h2 {
                 font-size: 1.15rem;
             }
-        }
-            /* Back to Top Button */
-        .back-to-top {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            width: 44px;
-            height: 44px;
-            border-radius: 50%;
-            background-color: #507a0c;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-            display: none;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.2rem;
-            line-height: 1;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-            transition: background-color 0.2s, opacity 0.3s;
-            opacity: 0;
-            z-index: 999;
-            text-decoration: none;
-            padding: 0;
-        }
-        .back-to-top:hover {
-            background-color: #3a5a07;
-        }
-        .back-to-top.visible {
-            display: flex;
-            opacity: 1;
-        }
-        @media (max-width: 480px) {
+
             .back-to-top {
                 bottom: 20px;
                 right: 20px;
@@ -433,7 +414,8 @@
                 font-size: 1rem;
             }
         }
-</style>
+    </style>
+
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-W2VL881CW8"></script>
     <script>
@@ -441,6 +423,53 @@
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-W2VL881CW8');
+    </script>
+
+    <!-- Structured Data - BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.mielhealth.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Blog",
+                "item": "https://www.mielhealth.com/blog.html"
+            }
+        ]
+    }
+    </script>
+
+    <!-- Structured Data - Blog -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        "name": "Aadon Trading Blog",
+        "url": "https://www.mielhealth.com/blog.html",
+        "description": "Buyer's guides and industry insights on importing bee products from China.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "HANGZHOU AADON TRADING CO., LTD.",
+            "url": "https://www.mielhealth.com"
+        },
+        "blogPost": [
+            {
+                "@type": "BlogPosting",
+                "headline": "How to Import Bee Products from China: A Complete Guide for Buyers",
+                "datePublished": "2026-06-21",
+                "url": "https://www.mielhealth.com/blog/how-to-import-bee-products-from-china.html",
+                "description": "A comprehensive guide covering regulations, supplier selection, shipping, and quality checks for importing bee products from China."
+            }
+        ]
+    }
     </script>
 </head>
 <body>
@@ -470,99 +499,97 @@
     <!-- Main Content -->
     <main>
         <div class="container">
-            <!-- Blog Header -->
-            <div class="blog-header">
-                <h1>Blog & Industry Insights</h1>
-                <p>Expert guides, market analysis, and practical tips for bee product importers and buyers</p>
+            <div class="blog-page-header">
+                <h1>Blog</h1>
+                <p>Buyer's guides, quality standards, and sourcing insights for bee product importers.</p>
             </div>
 
-            <!-- Blog Cards Grid -->
+            <!-- 2-Column Card Grid: Latest 4 Articles -->
             <div class="blog-grid">
 
-                <!-- Article Card 1 -->
+                <!-- Card 1 -->
                 <article class="blog-card">
                     <div class="blog-card-meta">
-                        <span class="blog-card-category">Import Guide</span>
-                        <span class="blog-card-date">June 21, 2026</span>
-                        <span class="blog-card-reading-time">12 min read</span>
+                        <span class="category-badge">Import Guide</span>
+                        <time datetime="2026-06-21">June 21, 2026</time>
+                        <span class="read-time">12 min read</span>
                     </div>
-                    <h2 class="blog-card-title">How to Import Bee Products from China: A Complete Guide for Buyers</h2>
-                    <p class="blog-card-description">Navigate the entire import process for Chinese bee products with confidence. This comprehensive guide covers regulatory requirements, quality certifications, supplier evaluation, shipping logistics, and negotiation strategies to help you source honey, royal jelly, propolis, and beeswax at competitive prices.</p>
-                    <a href="blog/how-to-import-bee-products-from-china.html" class="blog-card-link">Read More</a>
+                    <h2>How to Import Bee Products from China: A Complete Guide for Buyers</h2>
+                    <p>Everything you need to know about sourcing honey, royal jelly, propolis, bee pollen, and beeswax from China — from regulations and certifications to supplier evaluation, shipping logistics, and quality assurance best practices.</p>
+                    <a href="blog/how-to-import-bee-products-from-china.html" class="read-more">Read More</a>
                 </article>
 
-                <!-- Article Card 2 -->
+                <!-- Card 2 -->
                 <article class="blog-card">
                     <div class="blog-card-meta">
-                        <span class="blog-card-category">Product Guide</span>
-                        <span class="blog-card-date">June 22, 2026</span>
-                        <span class="blog-card-reading-time">8 min read</span>
+                        <span class="category-badge">Product Guide</span>
+                        <time datetime="2026-06-22">June 22, 2026</time>
+                        <span class="read-time">8 min read</span>
                     </div>
-                    <h2 class="blog-card-title">How to Import Royal Jelly from China: A Complete Buyer's Guide</h2>
-                    <p class="blog-card-description">Everything you need to know about sourcing royal jelly from China. Compare fresh vs. lyophilized powder, understand 10-HDA quality markers, and discover low-MOQ DHL shipping options starting at just 30kg. Includes COA parameters, cold chain requirements, and common buyer mistakes.</p>
-                    <a href="blog/how-to-import-royal-jelly-from-china.html" class="blog-card-link">Read More</a>
+                    <h2>How to Import Royal Jelly from China: A Complete Buyer's Guide</h2>
+                    <p>A focused guide for royal jelly importers covering fresh vs. freeze-dried forms, 10-HDA content standards, COA requirements, cold chain logistics, and how to evaluate reliable Chinese suppliers.</p>
+                    <a href="blog/how-to-import-royal-jelly-from-china.html" class="read-more">Read More</a>
                 </article>
 
-                <!-- Article Card 3 -->
+                <!-- Card 3 -->
                 <article class="blog-card">
                     <div class="blog-card-meta">
-                        <span class="blog-card-category">Quality & Sourcing</span>
-                        <span class="blog-card-date">June 25, 2026</span>
-                        <span class="blog-card-reading-time">9 min read</span>
+                        <span class="category-badge">Quality & Sourcing</span>
+                        <time datetime="2026-06-25">June 25, 2026</time>
+                        <span class="read-time">9 min read</span>
                     </div>
-                    <h2 class="blog-card-title">How Aadon Trading Manages Supplier Quality: Certifications, Batch Traceability & COA Standards</h2>
-                    <p class="blog-card-description">An inside look at how HANGZHOU AADON TRADING CO., LTD. ensures consistent bee product quality through factory certifications, batch traceability, and rigorous COA verification. Learn about our supplier qualification process and documentation standards.</p>
-                    <a href="blog/how-aadon-manages-supplier-quality.html" class="blog-card-link">Read More</a>
+                    <h2>How Aadon Trading Manages Supplier Quality: Certifications, Batch Traceability & COA Standards</h2>
+                    <p>An inside look at our quality management system — from HACCP and ISO certifications to full batch traceability, supplier auditing processes, and COA documentation standards that protect your supply chain.</p>
+                    <a href="blog/how-aadon-manages-supplier-quality.html" class="read-more">Read More</a>
                 </article>
 
-                <!-- Article Card 4 -->
+                <!-- Card 4 -->
                 <article class="blog-card">
                     <div class="blog-card-meta">
-                        <span class="blog-card-category">Product Guide</span>
-                        <span class="blog-card-date">July 1, 2026</span>
-                        <span class="blog-card-reading-time">10 min read</span>
+                        <span class="category-badge">Product Guide</span>
+                        <time datetime="2026-07-01">July 1, 2026</time>
+                        <span class="read-time">10 min read</span>
                     </div>
-                    <h2 class="blog-card-title">Beeswax Pellets Wholesale from China: White vs Yellow, Grades, MOQ & Sourcing Guide</h2>
-                    <p class="blog-card-description">Everything importers need to know about sourcing beeswax pellets from China — cosmetic vs candle grades, white vs yellow, melting point specs, MOQ, and shipping options. Includes grade comparison table and certification guide.</p>
-                    <a href="blog/beeswax-pellets-wholesale-from-china.html" class="blog-card-link">Read More</a>
+                    <h2>Beeswax Pellets Wholesale from China: White vs Yellow, Grades, MOQ & Sourcing Guide</h2>
+                    <p>Compare white and yellow beeswax pellets, understand cosmetic and pharmaceutical grade differences, learn about typical MOQs, pricing factors, and how to source premium beeswax pellets from certified Chinese suppliers.</p>
+                    <a href="blog/beeswax-pellets-wholesale-from-china.html" class="read-more">Read More</a>
                 </article>
 
             </div>
 
-            <!-- Older Articles - Title List -->
-            <h3 class="blog-older-heading">Older Articles</h3>
+            <!-- Older Articles: Compact List -->
+            <h2 class="older-articles-heading">Older Articles</h2>
+
             <ul class="blog-list">
                 <li>
-                    <a href="blog/royal-jelly-lyophilized-powder-wholesale-china.html" class="blog-list-item">
-                        <span class="blog-list-date">Jul 2, 2026</span>
-                        <span class="blog-list-category">Product Guide</span>
-                        <h4 class="blog-list-title">Lyophilized Royal Jelly Powder from China: 10-HDA Grades, COA Standards & Supplement Applications</h4>
-                        <span class="blog-list-arrow">&#8594;</span>
-                    </a>
+                    <span class="list-date">Jul 2, 2026</span>
+                    <span class="category-badge list-badge">Product Guide</span>
+                    <span class="list-title"><a href="blog/royal-jelly-lyophilized-powder-wholesale-china.html">Lyophilized Royal Jelly Powder from China: 10-HDA Grades, COA Standards & Supplement Applications</a></span>
+                    <span class="list-arrow">&rarr;</span>
                 </li>
                 <li>
-                    <a href="blog/bee-pollen-wholesale-from-china.html" class="blog-list-item">
-                        <span class="blog-list-date">Jul 8, 2026</span>
-                        <span class="blog-list-category">Product Guide</span>
-                        <h4 class="blog-list-title">Bee Pollen Wholesale from China: Types, Grades & Sourcing Guide</h4>
-                        <span class="blog-list-arrow">&#8594;</span>
-                    </a>
+                    <span class="list-date">Jul 10, 2026</span>
+                    <span class="category-badge list-badge">Product Guide</span>
+                    <span class="list-title"><a href="blog/propolis-sourcing-from-china.html">Propolis Sourcing from China: Extract, Blocks & Powder — Buyer's Guide</a></span>
+                    <span class="list-arrow">&rarr;</span>
                 </li>
                 <li>
-                    <a href="blog/honey-quality-testing-importer-guide.html" class="blog-list-item">
-                        <span class="blog-list-date">Jul 8, 2026</span>
-                        <span class="blog-list-category">Quality & Compliance</span>
-                        <h4 class="blog-list-title">Honey Quality Testing Guide: COA Parameters, Lab Methods & Supplier Due Diligence</h4>
-                        <span class="blog-list-arrow">&#8594;</span>
-                    </a>
+                    <span class="list-date">Jul 8, 2026</span>
+                    <span class="category-badge list-badge">Product Guide</span>
+                    <span class="list-title"><a href="blog/bee-pollen-wholesale-from-china.html">Bee Pollen Wholesale from China: Types, Grades & Sourcing Guide</a></span>
+                    <span class="list-arrow">&rarr;</span>
                 </li>
                 <li>
-                    <a href="blog/hanukkah-beeswax-candles-wholesale-china.html" class="blog-list-item">
-                        <span class="blog-list-date">Jul 6, 2026</span>
-                        <span class="blog-list-category">Product Guide</span>
-                        <h4 class="blog-list-title">Hanukkah Beeswax Candles Wholesale from China: Buyer's Guide 2026</h4>
-                        <span class="blog-list-arrow">&#8594;</span>
-                    </a>
+                    <span class="list-date">Jul 8, 2026</span>
+                    <span class="category-badge list-badge">Quality & Compliance</span>
+                    <span class="list-title"><a href="blog/honey-quality-testing-importer-guide.html">Honey Quality Testing Guide: COA Parameters, Lab Methods & Supplier Due Diligence</a></span>
+                    <span class="list-arrow">&rarr;</span>
+                </li>
+                <li>
+                    <span class="list-date">Jul 6, 2026</span>
+                    <span class="category-badge list-badge">Product Guide</span>
+                    <span class="list-title"><a href="blog/hanukkah-beeswax-candles-wholesale-china.html">Hanukkah Beeswax Candles Wholesale from China: Buyer's Guide 2026</a></span>
+                    <span class="list-arrow">&rarr;</span>
                 </li>
             </ul>
         </div>
@@ -574,6 +601,8 @@
     </footer>
 
     <a href="#" class="back-to-top" aria-label="Back to top">&#8593;</a>
+
+    <!-- Back to Top Script -->
     <script>
     (function() {
         var btn = document.querySelector('.back-to-top');
@@ -592,7 +621,6 @@
     })();
     </script>
 
-
     <!-- Hamburger Menu Script -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -604,7 +632,6 @@
                 toggle.setAttribute('aria-expanded', isOpen);
             });
 
-            // Close menu when clicking outside
             document.addEventListener('click', function (e) {
                 if (!navLinks.contains(e.target) && !toggle.contains(e.target)) {
                     navLinks.classList.remove('active');
@@ -616,62 +643,6 @@
 
     <!-- Tidio Chat Widget -->
     <script src="//code.tidio.co/yafy09blyzapqjpjpvf8k9b7hudh3dq8.js" async></script>
-
-    <!-- Structured Data - BreadcrumbList -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-            {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://www.mielhealth.com/"
-            },
-            {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Blog",
-                "item": "https://www.mielhealth.com/blog.html"
-            }
-        ]
-    }
-    </script>
-
-    <!-- Structured Data - Blog -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Blog",
-        "name": "MielHealth Blog & Industry Insights",
-        "description": "Expert guides and industry insights on importing bee products from China. Tips, regulations, quality standards, and market trends for international buyers.",
-        "url": "https://www.mielhealth.com/blog.html",
-        "publisher": {
-            "@type": "Organization",
-            "name": "HANGZHOU AADON TRADING CO., LTD.",
-            "url": "https://www.mielhealth.com"
-        },
-        "blogPost": [
-            {
-                "@type": "BlogPosting",
-                "headline": "How to Import Bee Products from China: A Complete Guide for Buyers",
-                "description": "Navigate the entire import process for Chinese bee products with confidence. This comprehensive guide covers regulatory requirements, quality certifications, supplier evaluation, shipping logistics, and negotiation strategies.",
-                "datePublished": "2026-06-21",
-                "url": "https://www.mielhealth.com/blog/how-to-import-bee-products-from-china.html",
-                "author": {
-                    "@type": "Organization",
-                    "name": "HANGZHOU AADON TRADING CO., LTD."
-                },
-                "publisher": {
-                    "@type": "Organization",
-                    "name": "HANGZHOU AADON TRADING CO., LTD.",
-                    "url": "https://www.mielhealth.com"
-                }
-            }
-        ]
-    }
-    </script>
 
 </body>
 </html>
