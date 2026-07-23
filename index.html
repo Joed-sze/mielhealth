@@ -1,16 +1,23 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bulk honey, royal jelly, propolis, bee pollen & beeswax from a HACCP & ISO certified Chinese supplier since 2004. Global export, factory prices, low MOQ. Request a free quote today.">
+    <meta name="description" content="Bulk honey, royal jelly, propolis, bee pollen & beeswax from a HACCP & ISO certified Chinese supplier since 2004. Global export, factory prices. Request a free quote today.">
     <meta name="keywords" content="wholesale bee products, honey supplier China, royal jelly wholesale, propolis supplier, beeswax candles, bulk bee pollen, bee products exporter">
     <meta name="author" content="HANGZHOU AADON TRADING CO., LTD.">
+    <meta name="robots" content="index, follow">
+
     <meta property="og:title" content="Wholesale Bee Products Supplier from China Since 2004 | Aadon Trading">
     <meta property="og:description" content="Bulk honey, royal jelly, propolis, bee pollen & beeswax from a HACCP & ISO certified Chinese supplier since 2004.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://www.mielhealth.com/banner-02.jpg">
     <meta property="og:url" content="https://www.mielhealth.com">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Wholesale Bee Products Supplier from China Since 2004 | Aadon Trading">
+    <meta name="twitter:description" content="Bulk honey, royal jelly, propolis, bee pollen & beeswax from a HACCP & ISO certified Chinese supplier since 2004.">
+    <meta name="twitter:image" content="https://www.mielhealth.com/banner-02.jpg">
     <link rel="canonical" href="https://www.mielhealth.com/">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <title>Wholesale Bee Products Supplier from China Since 2004 | Aadon Trading</title>
@@ -18,12 +25,25 @@
     <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <style>
         /* === Reset & Global === */
-        *, *::before, *::after {
-            box-sizing: border-box;
+        *, *::before, *::after { box-sizing: border-box; }
+
+        :root {
+            --primary: #456a09;
+            --primary-light: #507a0c;
+            --primary-dark: #3a5a07;
+            --accent: #d4a847;
+            --accent-light: #f5e6c4;
+            --bg-cream: #fff9f0;
+            --bg-warm: #faf5ec;
+            --text-dark: #1a3a1a;
+            --text-body: #333;
+            --text-muted: #666;
+            --border: #e6dfd3;
+            --white: #ffffff;
         }
 
         body {
@@ -31,106 +51,27 @@
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #fff9f0;
-            color: #1a4a1a;
+            background-color: var(--white);
+            color: var(--text-body);
+            -webkit-font-smoothing: antialiased;
         }
 
-        /* === Header === */
-        header {
-            background-color: #333;
-            color: white;
-            padding: 1rem 0;
-            text-align: center;
-        }
-
-        /* === Navigation === */
-        nav {
-            background-color: #456a09;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 0;
+        h1, h2, h3, h4 {
+            color: var(--text-dark);
+            font-weight: 700;
+            line-height: 1.3;
             margin: 0;
-            position: relative;
         }
 
-        nav a {
-            color: white;
-            padding: 14px 20px;
-            text-decoration: none;
-            font-weight: bold;
-            display: block;
-            transition: background-color 0.2s;
-        }
+        p { margin: 0 0 1rem; }
 
-        nav a:hover {
-            background-color: #3a5a07;
-        }
+        a { color: var(--primary-light); text-decoration: none; }
+        a:hover { text-decoration: underline; }
 
-        /* Hamburger button (mobile only) */
-        .nav-toggle {
-            display: none;
-            background: none;
-            border: none;
-            color: white;
-            font-size: 1.6rem;
-            cursor: pointer;
-            padding: 14px 20px;
-            line-height: 1;
-        }
-
-        .nav-links {
-            display: flex;
-            align-items: center;
-        }
-
-        /* Dropdown */
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-
-        .dropdown > a {
-            cursor: pointer;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #456a09;
-            min-width: 180px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 100;
-            top: 100%;
-            left: 0;
-        }
-
-        .dropdown-content a {
-            padding: 12px 16px;
-            display: block;
-            color: white;
-            text-decoration: none;
-            white-space: nowrap;
-            font-weight: bold;
-        }
-
-        .dropdown-content a:hover {
-            background-color: #3a5a07;
-        }
-
-        .dropdown:hover .dropdown-content,
-        .dropdown:focus-within .dropdown-content {
-            display: block;
-        }
-
-        /* === Container === */
         .container {
-            width: 80%;
             max-width: 1200px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin: 0 auto;
+            padding: 0 24px;
         }
 
         /* === Banner === */
@@ -145,368 +86,764 @@
             display: block;
         }
 
-        /* === Hero Section === */
-        .hero-section {
-            background: #507a0c;
-            color: white;
-            padding: 4rem 1rem;
-            text-align: center;
-            border-top: 3px solid rgba(255,255,255,0.3);
+        /* === Navigation === */
+        nav {
+            background-color: var(--primary);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border-bottom: 3px solid rgba(255,255,255,0.3);
         }
 
-        .hero-section h1 {
-            font-size: 2.4rem;
-            font-weight: 700;
-            margin: 0 0 1rem;
-            line-height: 1.3;
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            display: block;
+            transition: background-color 0.2s;
+        }
+
+        nav a:hover { background-color: var(--primary-dark); text-decoration: none; }
+
+        .nav-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.6rem;
+            cursor: pointer;
+            padding: 14px 20px;
+            line-height: 1;
+        }
+
+        .nav-links { display: flex; align-items: center; }
+
+        .dropdown { position: relative; display: inline-block; }
+        .dropdown > a { cursor: pointer; }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: var(--primary);
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 100;
+            top: 100%;
+            left: 0;
+        }
+
+        .dropdown-content a {
+            padding: 12px 16px;
+            display: block;
+            color: white;
+            text-decoration: none;
+            white-space: nowrap;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .dropdown-content a:hover { background-color: var(--primary-dark); }
+        .dropdown:hover .dropdown-content,
+        .dropdown:focus-within .dropdown-content { display: block; }
+
+        /* === Hero Section === */
+        .hero {
+            position: relative;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 50%, #5d8a10 100%);
+            color: white;
+            padding: 100px 24px 120px;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(212,168,71,0.15) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            left: -5%;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .hero-text h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            color: white;
+            margin-bottom: 1.2rem;
+            letter-spacing: -0.02em;
+        }
+
+        .hero-text h1 span {
+            color: var(--accent);
         }
 
         .hero-subtitle {
             font-size: 1.15rem;
-            margin: 0 0 2rem;
-            opacity: 0.95;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
+            opacity: 0.92;
+            margin-bottom: 2rem;
+            line-height: 1.7;
         }
 
-        .hero-cta {
+        .hero-badges {
             display: flex;
-            gap: 1rem;
-            justify-content: center;
             flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 2rem;
         }
 
-        .cta-button {
-            display: inline-block;
+        .hero-badge {
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(10px);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .hero-cta { display: flex; gap: 16px; flex-wrap: wrap; }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
             padding: 14px 32px;
-            border-radius: 6px;
+            border-radius: 8px;
             font-weight: 700;
+            font-size: 1rem;
             text-decoration: none;
-            transition: background-color 0.2s, transform 0.2s;
+            transition: all 0.2s ease;
+            cursor: pointer;
+            border: none;
         }
 
-        .cta-primary {
-            background: white;
-            color: #507a0c;
+        .btn-primary {
+            background: var(--accent);
+            color: #1a3a1a;
         }
 
-        .cta-primary:hover {
-            background: #f0f0f0;
+        .btn-primary:hover {
+            background: #c49a3a;
             transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            text-decoration: none;
         }
 
-        .cta-secondary {
+        .btn-secondary {
             background: transparent;
             color: white;
             border: 2px solid white;
         }
 
-        .cta-secondary:hover {
+        .btn-secondary:hover {
             background: rgba(255,255,255,0.15);
             transform: translateY(-2px);
-        }
-
-        /* === Section Titles === */
-        .section-title {
-            text-align: center;
-            font-size: 2rem;
-            color: #2c3e50;
-            margin-bottom: 2.5rem;
-            font-weight: 700;
-        }
-
-        /* === Products Table === */
-        .products-section {
-            padding: 3rem 1rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .products-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 1.5rem;
-            background: white;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-        }
-
-        .products-table th,
-        .products-table td {
-            padding: 14px 18px;
-            text-align: left;
-            border-bottom: 1px solid #e6dfd3;
-        }
-
-        .products-table th {
-            background: #507a0c;
-            color: white;
-            font-weight: 700;
-        }
-
-        .products-table tr:hover {
-            background: #f8f6f0;
-        }
-
-        .products-table a {
-            color: #507a0c;
-            font-weight: 600;
             text-decoration: none;
         }
 
-        .products-table a:hover {
-            text-decoration: underline;
+        .hero-visual {
+            position: relative;
+            z-index: 1;
         }
 
-        /* === Trust Stats === */
-        .trust-section {
-            padding: 3rem 1rem;
-            background: #f8f6f0;
+        .hero-card {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 16px;
+            padding: 32px;
+            color: white;
         }
 
-        .trust-grid {
+        .hero-card h3 {
+            color: white;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero-card-stats {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.5rem;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .hero-stat strong {
+            display: block;
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--accent);
+            line-height: 1;
+            margin-bottom: 4px;
+        }
+
+        .hero-stat span {
+            font-size: 0.85rem;
+            opacity: 0.85;
+        }
+
+        /* === Section Base === */
+        section { padding: 80px 0; }
+
+        .section-label {
+            display: inline-block;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--primary-light);
+            margin-bottom: 12px;
+        }
+
+        .section-title {
+            font-size: 2.2rem;
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 1rem;
+            letter-spacing: -0.01em;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: var(--text-muted);
+            max-width: 640px;
+            margin: 0 auto 3rem;
+            font-size: 1.05rem;
+        }
+
+        /* === Products Section === */
+        .products-section { background: var(--bg-cream); }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
             max-width: 1200px;
             margin: 0 auto;
+            padding: 0 24px;
         }
 
-        .trust-item {
+        .product-card {
             background: white;
-            padding: 1.5rem;
-            border-radius: 8px;
-            border-left: 4px solid #507a0c;
-        }
-
-        .trust-item strong {
-            color: #507a0c;
-            font-size: 1.1rem;
-        }
-
-        /* === Value Cards === */
-        .cards-section {
-            padding: 3rem 1rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .cards-wrapper {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 2rem;
-        }
-
-        .card {
-            flex: 1 1 calc(33.333% - 2rem);
-            min-width: 280px;
-            background: white;
-            border-radius: 8px;
+            border-radius: 16px;
             overflow: hidden;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+            transition: all 0.3s ease;
             display: flex;
             flex-direction: column;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
 
-        .card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+        .product-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 32px rgba(0,0,0,0.12);
         }
 
-        .card img {
-            width: 100%;
+        .product-image {
             height: 200px;
+            background: linear-gradient(135deg, var(--accent-light) 0%, var(--bg-warm) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3.5rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 100%;
             object-fit: cover;
             display: block;
         }
 
-        .card-body {
-            padding: 1.5rem;
+        .product-image::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 40px;
+            background: linear-gradient(to top, rgba(0,0,0,0.1), transparent);
+            pointer-events: none;
+        }
+
+        /* Product collage (3 images) */
+        .product-collage {
+            height: 200px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 2px;
+            background: white;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .product-collage .collage-main {
+            grid-row: span 2;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .product-collage .collage-sub {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .product-collage img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.4s ease;
+        }
+
+        .product-collage:hover img {
+            transform: scale(1.05);
+        }
+
+        .product-collage .collage-more {
+            position: absolute;
+            inset: 0;
+            background: rgba(0,0,0,0.4);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+        }
+
+        .product-body { padding: 24px; flex-grow: 1; display: flex; flex-direction: column; }
+
+        .product-category {
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--primary-light);
+            margin-bottom: 8px;
+        }
+
+        .product-body h3 {
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+            color: var(--text-dark);
+        }
+
+        .product-body p {
+            font-size: 0.92rem;
+            color: var(--text-muted);
+            margin-bottom: 16px;
+            line-height: 1.6;
             flex-grow: 1;
         }
 
-        .card-body h3 {
-            font-size: 1.4rem;
-            font-weight: 700;
-            color: #0a3d3d;
-            margin: 0 0 0.75rem;
+        .product-features {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 16px;
         }
 
-        .card-body p {
-            color: #555;
-            font-size: 0.95rem;
-            line-height: 1.7;
+        .product-features li {
+            font-size: 0.85rem;
+            color: var(--text-body);
+            padding: 4px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .product-features li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--primary-light);
+            font-weight: 700;
+            font-size: 0.8rem;
+        }
+
+        .product-link {
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: var(--primary-light);
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .product-link:hover { text-decoration: none; gap: 10px; }
+
+        /* === Trust Section === */
+        .trust-section { background: white; }
+
+        .trust-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .trust-item {
+            text-align: center;
+            padding: 32px 20px;
+            border-radius: 12px;
+            background: var(--bg-warm);
+            transition: transform 0.2s ease;
+        }
+
+        .trust-item:hover { transform: translateY(-4px); }
+
+        .trust-icon {
+            font-size: 2.5rem;
+            margin-bottom: 12px;
+        }
+
+        .trust-item strong {
+            display: block;
+            font-size: 1.1rem;
+            color: var(--text-dark);
+            margin-bottom: 6px;
+        }
+
+        .trust-item p {
+            font-size: 0.88rem;
+            color: var(--text-muted);
             margin: 0;
         }
 
-        /* === Target Clients === */
-        .clients-section {
-            padding: 3rem 1rem;
+        /* === Certifications Bar === */
+        .cert-bar {
+            background: var(--primary);
+            padding: 32px 0;
+            color: white;
+        }
+
+        .cert-bar-inner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 40px;
             max-width: 1200px;
             margin: 0 auto;
+            padding: 0 24px;
         }
 
-        .clients-list {
-            list-style: none;
-            padding: 0;
-            max-width: 800px;
+        .cert-item {
+            text-align: center;
+        }
+
+        .cert-item strong {
+            display: block;
+            font-size: 1rem;
+            font-weight: 700;
+        }
+
+        .cert-item span {
+            font-size: 0.75rem;
+            opacity: 0.7;
+        }
+
+        .cert-divider {
+            width: 1px;
+            height: 40px;
+            background: rgba(255,255,255,0.2);
+        }
+
+        /* === Why Choose Us === */
+        .why-section { background: var(--bg-cream); }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+            max-width: 1200px;
             margin: 0 auto;
+            padding: 0 24px;
         }
 
-        .clients-list li {
-            padding: 0.8rem 0;
-            border-bottom: 1px solid #e6dfd3;
-            font-size: 1.05rem;
+        .why-card {
+            background: white;
+            padding: 32px 28px;
+            border-radius: 16px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+            transition: transform 0.3s ease;
         }
 
-        .clients-list li strong {
-            color: #507a0c;
-        }
+        .why-card:hover { transform: translateY(-4px); }
 
-        /* === FAQ Preview === */
-        .faq-preview-section {
-            padding: 3rem 1rem;
-            background: #f8f6f0;
-        }
-
-        .faq-preview {
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .faq-item {
-            margin-bottom: 1.5rem;
-        }
-
-        .faq-item h3 {
+        .why-card h3 {
             font-size: 1.15rem;
-            color: #2c3e50;
-            margin: 0 0 0.5rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
 
-        .faq-item p {
-            color: #555;
+        .why-card h3 svg.bee-icon {
+            width: 30px;
+            height: 36px;
+            stroke: var(--primary);
+            stroke-width: 1.8;
+            fill: none;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            flex-shrink: 0;
+        }
+
+        .why-card h3 svg.bee-icon .drop-fill {
+            fill: var(--accent);
+            stroke: none;
+        }
+
+        .why-card p {
+            font-size: 0.95rem;
+            color: var(--text-muted);
             margin: 0;
             line-height: 1.7;
         }
 
         /* === Blog Preview === */
-        .blog-preview-section {
-            padding: 3rem 1rem;
+        .blog-section { background: white; }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+            max-width: 1200px;
+            margin: 0 auto 2rem;
+            padding: 0 24px;
+        }
+
+        .blog-card {
+            background: var(--bg-warm);
+            border-radius: 12px;
+            padding: 28px;
+            transition: all 0.3s ease;
+            border: 1px solid var(--border);
+        }
+
+        .blog-card:hover {
+            background: white;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+            transform: translateY(-4px);
+        }
+
+        .blog-meta {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 12px;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        .blog-category {
+            background: var(--primary-light);
+            color: white;
+            padding: 3px 10px;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+        }
+
+        .blog-card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: var(--text-dark);
+            line-height: 1.4;
+        }
+
+        .blog-card p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 14px;
+            line-height: 1.6;
+        }
+
+        .blog-read-more {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--primary-light);
+        }
+
+        .blog-view-all {
+            text-align: center;
+            padding: 0 24px;
+        }
+
+        /* === CTA Section === */
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            color: white;
+            padding: 80px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(212,168,71,0.2) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .cta-content {
+            position: relative;
+            z-index: 1;
             max-width: 1200px;
             margin: 0 auto;
+            padding: 0 24px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
         }
 
-        .blog-links {
-            list-style: none;
-            padding: 0;
+        .cta-text h2 {
+            font-size: 2.2rem;
+            color: white;
+            margin-bottom: 1rem;
+            font-weight: 800;
         }
 
-        .blog-links li {
-            padding: 0.6rem 0;
-        }
-
-        .blog-links a {
-            color: #507a0c;
-            font-weight: 600;
-            text-decoration: none;
+        .cta-text p {
             font-size: 1.05rem;
-        }
-
-        .blog-links a:hover {
-            text-decoration: underline;
-        }
-
-        /* === Final CTA === */
-        .final-cta-section {
-            background: #507a0c;
-            color: white;
-            padding: 4rem 1rem;
-            text-align: center;
-        }
-
-        .final-cta-section h2 {
-            font-size: 2rem;
-            margin: 0 0 1rem;
-        }
-
-        .final-cta-section p {
-            font-size: 1.1rem;
-            opacity: 0.95;
-            max-width: 600px;
-            margin: 0 auto 1.5rem;
-        }
-
-        .final-cta-section .contact-info {
-            margin-top: 1.5rem;
-            font-size: 1rem;
             opacity: 0.9;
+            margin-bottom: 1.5rem;
         }
 
-        .final-cta-section .contact-info a {
-            color: white;
-            text-decoration: underline;
+        .cta-contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            font-size: 0.95rem;
         }
+
+        .cta-contact-info .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .cta-contact-info svg {
+            width: 24px;
+            height: 24px;
+            stroke: var(--accent);
+            stroke-width: 1.8;
+            fill: none;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            flex-shrink: 0;
+        }
+
+        .cta-contact-info a { color: var(--accent); font-weight: 600; }
+
+        .cta-form {
+            background: white;
+            border-radius: 16px;
+            padding: 32px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+        }
+
+        .cta-form h3 {
+            color: var(--text-dark);
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+        }
+
+        .form-group { margin-bottom: 16px; }
+
+        .form-group label {
+            display: block;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-body);
+            margin-bottom: 6px;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px 14px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            font-size: 0.95rem;
+            font-family: inherit;
+            color: var(--text-body);
+            transition: border-color 0.2s;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-light);
+            box-shadow: 0 0 0 3px rgba(80,122,12,0.1);
+        }
+
+        .form-group textarea { resize: vertical; min-height: 80px; }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+
+        .cta-form .btn { width: 100%; justify-content: center; }
 
         /* === Footer === */
         footer {
             text-align: center;
             padding: 3px;
-            background-color: #456a09;
+            background-color: var(--primary);
             color: white;
+            font-size: 0.9rem;
             border-top: 3px solid rgba(255,255,255,0.3);
         }
 
-        /* === Responsive === */
-        @media (max-width: 768px) {
-            .banner-img {
-                max-height: 300px;
-                object-fit: contain;
-            }
+        footer p { margin: 0; padding: 10px 0; }
 
-            .nav-toggle {
-                display: block;
-            }
-
-            .nav-links {
-                display: none;
-                flex-direction: column;
-                width: 100%;
-            }
-
-            .nav-links.active {
-                display: flex;
-            }
-
-            .nav-links a {
-                padding: 12px 20px;
-                border-top: 1px solid rgba(255,255,255,0.1);
-            }
-
-            .dropdown-content {
-                position: static;
-                box-shadow: none;
-                background-color: #456a09;
-            }
-
-            .dropdown-content a {
-                padding-left: 40px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .banner-img {
-                max-height: 200px;
-            }
-
-            .cards-section-title {
-                font-size: 1.5rem;
-            }
-        }
-            /* Back to Top Button */
+        /* === Back to Top === */
         .back-to-top {
             position: fixed;
             bottom: 30px;
@@ -514,7 +851,7 @@
             width: 44px;
             height: 44px;
             border-radius: 50%;
-            background-color: #507a0c;
+            background-color: var(--primary-light);
             color: #fff;
             border: none;
             cursor: pointer;
@@ -530,23 +867,53 @@
             text-decoration: none;
             padding: 0;
         }
-        .back-to-top:hover {
-            background-color: #3a5a07;
+
+        .back-to-top:hover { background-color: var(--primary-dark); }
+        .back-to-top.visible { display: flex; opacity: 1; }
+
+        /* === Responsive === */
+        @media (max-width: 1024px) {
+            .products-grid { grid-template-columns: repeat(2, 1fr); }
+            .trust-grid { grid-template-columns: repeat(2, 1fr); }
+            .why-grid { grid-template-columns: 1fr; max-width: 600px; }
+            .blog-grid { grid-template-columns: 1fr; max-width: 500px; }
+            .hero-content { grid-template-columns: 1fr; text-align: center; }
+            .hero-text h1 { font-size: 2.2rem; }
+            .hero-badges { justify-content: center; }
+            .hero-cta { justify-content: center; }
+            .hero-visual { max-width: 400px; margin: 0 auto; }
+            .cta-content { grid-template-columns: 1fr; text-align: center; }
+            .cta-form { max-width: 500px; margin: 0 auto; }
         }
-        .back-to-top.visible {
-            display: flex;
-            opacity: 1;
+
+        @media (max-width: 768px) {
+            .banner-img { max-height: 200px; object-fit: cover; object-position: left center; }
+            .nav-toggle { display: block; }
+            .nav-links { display: none; flex-direction: column; width: 100%; }
+            .nav-links.active { display: flex; }
+            .nav-links a { padding: 12px 20px; border-top: 1px solid rgba(255,255,255,0.1); }
+            .dropdown-content { position: static; box-shadow: none; background-color: var(--primary); }
+            .dropdown-content a { padding-left: 40px; }
+
+            section { padding: 60px 0; }
+            .hero { padding: 60px 20px 80px; }
+            .hero-text h1 { font-size: 1.8rem; }
+            .section-title { font-size: 1.6rem; }
+            .products-grid { grid-template-columns: 1fr; max-width: 400px; margin: 0 auto; }
+            .trust-grid { grid-template-columns: 1fr 1fr; gap: 16px; }
+            .trust-item { padding: 24px 16px; }
+            .cert-bar-inner { gap: 20px; }
+            .cert-divider { display: none; }
+            .form-row { grid-template-columns: 1fr; }
         }
+
         @media (max-width: 480px) {
-            .back-to-top {
-                bottom: 20px;
-                left: 20px;
-                width: 38px;
-                height: 38px;
-                font-size: 1rem;
-            }
+            .back-to-top { bottom: 20px; left: 20px; width: 38px; height: 38px; font-size: 1rem; }
+            .hero-text h1 { font-size: 1.5rem; }
+            .products-grid { padding: 0 16px; }
         }
-</style>
+    </style>
+
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-W2VL881CW8"></script>
     <script>
@@ -560,12 +927,12 @@
 
     <!-- Banner -->
     <div class="banner-container">
-        <img src="banner-02.jpg" class="banner-img" alt="Wholesale bee products supplier China - HANGZHOU AADON TRADING CO., LTD." fetchpriority="high">
+        <img src="images/banner-02.jpg" class="banner-img" alt="Wholesale bee products supplier China - HANGZHOU AADON TRADING CO., LTD." fetchpriority="high">
     </div>
 
     <!-- Navigation -->
     <nav aria-label="Main navigation">
-        <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">&#9776;</button>
+        <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" onclick="document.querySelector('.nav-links').classList.toggle('active')">&#9776;</button>
 
         <div class="nav-links">
             <a href="index.html">HOME</a>
@@ -574,185 +941,371 @@
                 <a href="javascript:void(0)" aria-haspopup="true" aria-expanded="false">PRODUCTS &#9662;</a>
                 <div class="dropdown-content" role="menu">
                     <a href="bee-products.html" role="menuitem">Bee Products</a>
-                    <a href="beeswax-candles.html" role="menuitem">Beeswax Candle</a>
+                    <a href="beeswax-candles.html" role="menuitem">Beeswax Candles</a>
                 </div>
             </div>
 
             <a href="about.html">ABOUT</a>
-            <a href="contact.html">CONTACT</a>
-            <a href="faq.html">FAQ</a>
             <a href="blog.html">BLOG</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">CONTACT</a>
         </div>
     </nav>
 
-    <!-- Main Content -->
     <main>
         <!-- Hero Section -->
-        <section class="hero-section">
-            <h1>China's Trusted Wholesale Bee Products Supplier Since 2004</h1>
-            <p class="hero-subtitle">Bulk honey, royal jelly, propolis, bee pollen, beeswax & beeswax candles — HACCP & ISO certified, exported to North America, Europe, Asia & South America.</p>
-            <div class="hero-cta">
-                <a href="contact.html" class="cta-button cta-primary">Request a Free Quote</a>
-                <a href="bee-products.html" class="cta-button cta-secondary">View Our Products</a>
-            </div>
-        </section>
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Premium Bee Products from China, <span>Since 2004</span></h1>
+                    <p class="hero-subtitle">HANGZHOU AADON TRADING CO., LTD. — your trusted wholesale partner for honey, royal jelly, propolis, bee pollen, beeswax and beeswax candles. HACCP & ISO certified, exported to North America, Europe, Asia & South America.</p>
 
-        <!-- Products Overview -->
-        <section class="products-section">
-            <h2 class="section-title">What We Supply</h2>
-            <p style="text-align:center; color:#555; max-width:800px; margin:0 auto 2rem;">We offer a full range of premium bee products for food, nutraceutical, cosmetic, and candle manufacturing industries.</p>
+                    <div class="hero-badges">
+                        <span class="hero-badge">HACCP Certified</span>
+                        <span class="hero-badge">ISO 9001</span>
+                        <span class="hero-badge">KOSHER</span>
+                        <span class="hero-badge">HALAL</span>
+                        <span class="hero-badge">Est. 2004</span>
+                    </div>
 
-            <table class="products-table">
-                <thead>
-                    <tr>
-                        <th>Product</th>
-                        <th>Available Forms</th>
-                        <th>Key Markets</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><a href="bee-products.html#honey">Honey</a></td>
-                        <td>Raw bulk, retail bottle</td>
-                        <td>Food & beverage, retail</td>
-                    </tr>
-                    <tr>
-                        <td><a href="bee-products.html#royal-jelly">Royal Jelly</a></td>
-                        <td>Fresh, freeze-dried powder</td>
-                        <td>Supplements, cosmetics</td>
-                    </tr>
-                    <tr>
-                        <td><a href="bee-products.html#propolis">Propolis</a></td>
-                        <td>Refined extract, blocks, powder</td>
-                        <td>Pharma, supplements</td>
-                    </tr>
-                    <tr>
-                        <td><a href="bee-products.html#bee-pollen">Bee Pollen</a></td>
-                        <td>Human grade, feeding grade, powder</td>
-                        <td>Health food, animal feed</td>
-                    </tr>
-                    <tr>
-                        <td><a href="bee-products.html#beeswax">Beeswax</a></td>
-                        <td>Refined blocks, pellets</td>
-                        <td>Cosmetics, candles</td>
-                    </tr>
-                    <tr>
-                        <td><a href="beeswax-candles.html">Beeswax Candles</a></td>
-                        <td>Glass, handroll, taper, Hanukkah</td>
-                        <td>Jewish market, gifting</td>
-                    </tr>
-                </tbody>
-            </table>
-            <p style="text-align:center;"><a href="bee-products.html" style="color:#507a0c; font-weight:600; text-decoration:none;">View All Products &rarr;</a></p>
-        </section>
+                    <div class="hero-cta">
+                        <a href="contact.html" class="btn btn-primary">Request a Quote</a>
+                        <a href="#products" class="btn btn-secondary">View Products</a>
+                    </div>
+                </div>
 
-        <!-- Trust Stats -->
-        <section class="trust-section">
-            <h2 class="section-title">Why Buyers Choose Aadon Trading</h2>
-            <div class="trust-grid">
-                <div class="trust-item">
-                    <p><strong>20+ Years</strong> in bee products export (est. 2004)</p>
-                </div>
-                <div class="trust-item">
-                    <p><strong>Global Reach:</strong> Exported to North America, Europe, Asia & South America</p>
-                </div>
-                <div class="trust-item">
-                    <p><strong>Multiple Certifications:</strong> HACCP &middot; ISO 9001 &middot; KOSHER &middot; HALAL &middot; EU Organic &middot; USDA NOP</p>
-                </div>
-                <div class="trust-item">
-                    <p><strong>Full Batch Traceability:</strong> Every batch tracked from raw material sourcing through final packaging — with documented records at every stage</p>
+                <div class="hero-visual">
+                    <div class="hero-card">
+                        <h3>Trusted by Buyers Worldwide</h3>
+                        <div class="hero-card-stats">
+                            <div class="hero-stat">
+                                <strong>20+</strong>
+                                <span>Years in Export</span>
+                            </div>
+                            <div class="hero-stat">
+                                <strong>4</strong>
+                                <span>Continents Served</span>
+                            </div>
+                            <div class="hero-stat">
+                                <strong>6</strong>
+                                <span>Product Categories</span>
+                            </div>
+                            <div class="hero-stat">
+                                <strong>100%</strong>
+                                <span>Batch Traceability</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Value Propositions -->
-        <section class="cards-section">
-            <h2 class="section-title">Our Commitment to Quality</h2>
+        <!-- Products Section -->
+        <section class="products-section" id="products">
+            <div style="text-align:center; margin-bottom: 3rem; padding: 0 24px;">
+                <span class="section-label">Our Products</span>
+                <h2 class="section-title">What We Supply</h2>
+                <p class="section-subtitle">A full range of premium bee products for food, nutraceutical, cosmetic, and candle manufacturing industries.</p>
+            </div>
 
-            <div class="cards-wrapper">
-                <!-- Card 1 -->
-                <article class="card">
-                    <img src="quality.jpeg" alt="Quality control in bee products manufacturing" loading="lazy">
-                    <div class="card-body">
-                        <h3>Quality is trust</h3>
-                        <p>Every product we ship carries our reputation. From supplier qualification audits to pre-shipment inspection, quality control is embedded at every stage — not just at the end. When you receive our products, you can trust they meet the specifications you agreed on.</p>
+            <div class="products-grid">
+                <!-- Honey -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/product-honey-v2.jpg" alt="Bulk honey wholesale from China" loading="lazy">
+                    </div>
+                    <div class="product-body">
+                        <span class="product-category">Honey</span>
+                        <h3>Bulk Natural Honey</h3>
+                        <p>Raw and processed honey in various floral varieties — white, ela, acacia, jujube and more. Suitable for food, beverage and retail packaging.</p>
+                        <ul class="product-features">
+                            <li>Multiple floral varieties</li>
+                            <li>Raw &amp; processed options</li>
+                            <li>Food-grade packaging</li>
+                        </ul>
+                        <a href="bee-products.html#honey" class="product-link">Learn More &rarr;</a>
                     </div>
                 </article>
 
-                <!-- Card 2 -->
-                <article class="card">
-                    <img src="supplier.jpeg" alt="Long-term bee farm supplier partnerships" loading="lazy">
-                    <div class="card-body">
-                        <h3>Long-term supplier partnerships</h3>
-                        <p>We don't buy from spot markets. We collaborate with a vetted network of bee farms and processing factories as strategic partners — with tiered management, on-site technical guidance, and continuous raw material testing. This means consistent quality across every order, every season.</p>
+                <!-- Royal Jelly -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/product-royal-jelly.jpg" alt="Royal jelly wholesale supplier China" loading="lazy">
+                    </div>
+                    <div class="product-body">
+                        <span class="product-category">Royal Jelly</span>
+                        <h3>Fresh &amp; Lyophilized Royal Jelly</h3>
+                        <p>Premium royal jelly with guaranteed 10-HDA content. Available as fresh frozen royal jelly and lyophilized powder for supplement and cosmetic applications.</p>
+                        <ul class="product-features">
+                            <li>10-HDA 1.3–2.0% (fresh), 4.0–6.0% (lyophilized)</li>
+                            <li>Fresh &amp; freeze-dried</li>
+                            <li>Refrigerated packaging</li>
+                        </ul>
+                        <a href="bee-products.html#royal-jelly" class="product-link">Learn More &rarr;</a>
                     </div>
                 </article>
 
-                <!-- Card 3 -->
-                <article class="card">
-                    <img src="value.png" alt="Customer-value-oriented wholesale bee products" loading="lazy">
-                    <div class="card-body">
-                        <h3>Customer-value-oriented</h3>
-                        <p>A compliant product is the baseline, not the goal. Our measure of success is whether our products help your business grow — whether that means hitting label claims, passing import inspections, or building customer loyalty. We align our processes to your market needs.</p>
+                <!-- Propolis -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/product-propolis-v8.jpg" alt="Propolis wholesale from China" loading="lazy">
+                    </div>
+                    <div class="product-body">
+                        <span class="product-category">Propolis</span>
+                        <h3>Propolis Blocks &amp; Powder</h3>
+                        <p>High-quality propolis in refined form and clean raw blocks. Ideal for supplement, pharmaceutical and cosmetic manufacturers seeking reliable raw material supply.</p>
+                        <ul class="product-features">
+                            <li>Refined propolis 99%+</li>
+                            <li>Raw blocks 55-60% purity</li>
+                            <li>Propolis powder</li>
+                        </ul>
+                        <a href="bee-products.html#propolis" class="product-link">Learn More &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- Bee Pollen -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/product-bee-pollen-v7.jpg" alt="Bee pollen wholesale China" loading="lazy">
+                    </div>
+                    <div class="product-body">
+                        <span class="product-category">Bee Pollen</span>
+                        <h3>Bee Pollen &amp; Pollen Powder</h3>
+                        <p>Human consumption grade, bee feeding grade, and broken cell wall pollen powder (~60 mesh). Sourced from controlled apiaries with full quality documentation.</p>
+                        <ul class="product-features">
+                            <li>Human &amp; feeding grade</li>
+                            <li>Broken cell wall powder</li>
+                            <li>Multi-floral varieties</li>
+                        </ul>
+                        <a href="bee-products.html#bee-pollen" class="product-link">Learn More &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- Beeswax -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/product-beeswax-pellets-v4.jpg" alt="Beeswax pellets and blocks wholesale" loading="lazy">
+                    </div>
+                    <div class="product-body">
+                        <span class="product-category">Beeswax</span>
+                        <h3>Beeswax Pellets &amp; Blocks</h3>
+                        <p>White and yellow beeswax in pellet and block form. Cosmetic grade and candle making grade available with consistent quality across every batch.</p>
+                        <ul class="product-features">
+                            <li>White &amp; yellow beeswax</li>
+                            <li>Pellets &amp; blocks</li>
+                            <li>Cosmetic &amp; candle grade</li>
+                        </ul>
+                        <a href="bee-products.html#beeswax" class="product-link">Learn More &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- Beeswax Candles -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/product-beeswax-candles.jpg" alt="Beeswax candles wholesale China" loading="lazy">
+                    </div>
+                    <div class="product-body">
+                        <span class="product-category">Candles</span>
+                        <h3>100% Beeswax Candles</h3>
+                        <p>Handcrafted beeswax candles including Hanukkah candles, taper candles, pillar candles and glass jar candles. Natural, clean-burning and eco-friendly.</p>
+                        <ul class="product-features">
+                            <li>Hanukkah candles (14cm)</li>
+                            <li>Taper, pillar &amp; jar styles</li>
+                            <li>Custom packaging</li>
+                        </ul>
+                        <a href="beeswax-candles.html" class="product-link">Learn More &rarr;</a>
                     </div>
                 </article>
             </div>
         </section>
 
-        <!-- Target Clients -->
-        <section class="clients-section">
-            <h2 class="section-title">Who We Work With</h2>
-            <p style="text-align:center; color:#555; max-width:800px; margin:0 auto 1.5rem;">Aadon Trading serves B2B buyers worldwide, including:</p>
-
-            <ul class="clients-list">
-                <li><strong>Importers & distributors</strong> sourcing bulk bee products from China</li>
-                <li><strong>Health supplement manufacturers</strong> requiring royal jelly, propolis, or bee pollen raw materials</li>
-                <li><strong>Cosmetic brands</strong> sourcing beeswax and propolis extract</li>
-                <li><strong>Food & beverage companies</strong> sourcing natural honey at scale</li>
-                <li><strong>Candle manufacturers and retailers</strong> sourcing pure beeswax candles, including Hanukkah candles for the Jewish market</li>
-            </ul>
-
-            <p style="text-align:center; margin-top:1.5rem; color:#555;">If you're looking for a reliable, certified, long-term supplier in China, we'd like to talk.</p>
-            <p style="text-align:center;"><a href="contact.html" class="cta-button cta-primary" style="margin-top:1rem;">Contact Us</a></p>
-        </section>
-
-        <!-- FAQ Preview -->
-        <section class="faq-preview-section">
-            <h2 class="section-title">Common Questions from Buyers</h2>
-            <div class="faq-preview">
-                <div class="faq-item">
-                    <h3>What is the minimum order quantity?</h3>
-                    <p>For most bee products, MOQ starts at 100kg. For beeswax candles, MOQ is 500 pieces. We also offer smaller trial/sample orders to help you evaluate quality before committing.</p>
+        <!-- Certifications Bar -->
+        <div class="cert-bar">
+            <div class="cert-bar-inner">
+                <div class="cert-item">
+                    <strong>HACCP</strong>
+                    <span>Food Safety</span>
                 </div>
-                <div class="faq-item">
-                    <h3>Do you provide product certifications?</h3>
-                    <p>Yes. Our partner factories hold HACCP, ISO 9001, KOSHER, HALAL, EU Organic, and USDA NOP certifications. COA and test reports are available for all products.</p>
+                <div class="cert-divider"></div>
+                <div class="cert-item">
+                    <strong>ISO 9001</strong>
+                    <span>Quality Management</span>
                 </div>
-                <div class="faq-item">
-                    <h3>Can you arrange shipping to our country?</h3>
-                    <p>Yes. We handle sea freight for bulk orders and can arrange DHL/air freight for small or urgent orders. We provide full export documentation including health certificates and certificate of origin.</p>
+                <div class="cert-divider"></div>
+                <div class="cert-item">
+                    <strong>KOSHER</strong>
+                    <span>Jewish Dietary</span>
+                </div>
+                <div class="cert-divider"></div>
+                <div class="cert-item">
+                    <strong>HALAL</strong>
+                    <span>Islamic Dietary</span>
+                </div>
+                <div class="cert-divider"></div>
+                <div class="cert-item">
+                    <strong>EU Organic</strong>
+                    <span>Organic Standard</span>
+                </div>
+                <div class="cert-divider"></div>
+                <div class="cert-item">
+                    <strong>USDA NOP</strong>
+                    <span>US Organic</span>
                 </div>
             </div>
-            <p style="text-align:center; margin-top:1.5rem;"><a href="faq.html" style="color:#507a0c; font-weight:600; text-decoration:none;">View All FAQs &rarr;</a></p>
+        </div>
+
+        <!-- Why Choose Us -->
+        <section class="why-section">
+            <div style="text-align:center; margin-bottom: 3rem; padding: 0 24px;">
+                <span class="section-label">Why Choose Us</span>
+                <h2 class="section-title">Why Buyers Choose Aadon Trading</h2>
+                <p class="section-subtitle">We combine 20+ years of industry experience with rigorous quality control and a multi-factory supply network.</p>
+            </div>
+
+            <div class="why-grid">
+                <div class="why-card">
+                    <h3><svg class="bee-icon" viewBox="0 0 30 40"><path d="M15 3 L25 8.5 L25 19.5 L15 25 L5 19.5 L5 8.5 Z"/><path d="M15 25 C13 29 10 33 10 35 C10 37.2 12.2 39 15 39 C17.8 39 20 37.2 20 35 C20 33 17 29 15 25 Z" class="drop-fill"/></svg>Multi-Factory Network</h3>
+                    <p>We work with multiple specialized factories, matching each product to the most suitable production facility. Different factories excel in different areas — honey processing, royal jelly extraction, beeswax refining, propolis purification — and we connect you to the best one for your needs.</p>
+                </div>
+
+                <div class="why-card">
+                    <h3><svg class="bee-icon" viewBox="0 0 30 40"><path d="M15 3 L25 8.5 L25 19.5 L15 25 L5 19.5 L5 8.5 Z"/><path d="M15 25 C13 29 10 33 10 35 C10 37.2 12.2 39 15 39 C17.8 39 20 37.2 20 35 C20 33 17 29 15 25 Z" class="drop-fill"/></svg>Rigorous Quality Control</h3>
+                    <p>From raw material sourcing to final packaging, quality control is embedded at every stage. Every batch comes with a full COA, and we support third-party inspection before shipment. Your reputation depends on consistent quality — so does ours.</p>
+                </div>
+
+                <div class="why-card">
+                    <h3><svg class="bee-icon" viewBox="0 0 30 40"><path d="M15 3 L25 8.5 L25 19.5 L15 25 L5 19.5 L5 8.5 Z"/><path d="M15 25 C13 29 10 33 10 35 C10 37.2 12.2 39 15 39 C17.8 39 20 37.2 20 35 C20 33 17 29 15 25 Z" class="drop-fill"/></svg>Full Batch Traceability</h3>
+                    <p>Every product batch is tracked from raw material through processing and packaging. Complete documentation at every stage means you can trace any shipment back to its origin — essential for regulatory compliance and quality assurance.</p>
+                </div>
+
+                <div class="why-card">
+                    <h3><svg class="bee-icon" viewBox="0 0 30 40"><path d="M15 3 L25 8.5 L25 19.5 L15 25 L5 19.5 L5 8.5 Z"/><path d="M15 25 C13 29 10 33 10 35 C10 37.2 12.2 39 15 39 C17.8 39 20 37.2 20 35 C20 33 17 29 15 25 Z" class="drop-fill"/></svg>Global Export Experience</h3>
+                    <p>Exporting to North America, Europe, Asia and South America since 2004. We handle all export documentation — health certificates, certificate of origin, customs forms — and can arrange sea freight or air freight to your destination.</p>
+                </div>
+
+                <div class="why-card">
+                    <h3><svg class="bee-icon" viewBox="0 0 30 40"><path d="M15 3 L25 8.5 L25 19.5 L15 25 L5 19.5 L5 8.5 Z"/><path d="M15 25 C13 29 10 33 10 35 C10 37.2 12.2 39 15 39 C17.8 39 20 37.2 20 35 C20 33 17 29 15 25 Z" class="drop-fill"/></svg>B2B Focused Service</h3>
+                    <p>We specialize in serving importers, distributors, supplement manufacturers, cosmetic brands and food companies. Our team understands B2B requirements — from sample evaluation to large-volume production scheduling — and responds within 24 hours.</p>
+                </div>
+
+                <div class="why-card">
+                    <h3><svg class="bee-icon" viewBox="0 0 30 40"><path d="M15 3 L25 8.5 L25 19.5 L15 25 L5 19.5 L5 8.5 Z"/><path d="M15 25 C13 29 10 33 10 35 C10 37.2 12.2 39 15 39 C17.8 39 20 37.2 20 35 C20 33 17 29 15 25 Z" class="drop-fill"/></svg>Long-Term Partnership</h3>
+                    <p>We don't chase one-off orders. We invest in long-term relationships: technical guidance for your product development, flexible production scheduling, and proactive communication. Most of our clients have been with us for 5+ years.</p>
+                </div>
+            </div>
         </section>
 
         <!-- Blog Preview -->
-        <section class="blog-preview-section">
-            <h2 class="section-title">Buyer's Guides & Industry Insights</h2>
-            <ul class="blog-links">
-                <li><a href="blog/how-to-import-bee-products-from-china.html">How to Import Bee Products from China: A Complete Guide for Buyers</a></li>
-                <li><a href="blog/how-to-import-royal-jelly-from-china.html">How to Import Royal Jelly from China: A Complete Buyer's Guide</a></li>
-            </ul>
-            <p style="text-align:center; margin-top:1rem;"><a href="blog.html" style="color:#507a0c; font-weight:600; text-decoration:none;">View All Articles &rarr;</a></p>
+        <section class="blog-section">
+            <div style="text-align:center; margin-bottom: 3rem; padding: 0 24px;">
+                <span class="section-label">Resources</span>
+                <h2 class="section-title">Buyer's Guides &amp; Insights</h2>
+                <p class="section-subtitle">Practical guides for sourcing bee products from China — quality standards, supplier evaluation, and industry knowledge.</p>
+            </div>
+
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-meta">
+                        <span class="blog-category">Guide</span>
+                        <span>Jul 15, 2026</span>
+                    </div>
+                    <h3>How to Choose a Reliable Bee Products Supplier in China</h3>
+                    <p>A practical checklist for evaluating Chinese suppliers — red flags, green flags, certification verification, and questions every buyer should ask.</p>
+                    <a href="blog/how-to-choose-bee-products-supplier-china.html" class="blog-read-more">Read More &rarr;</a>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-meta">
+                        <span class="blog-category">Quality</span>
+                        <span>Jul 8, 2026</span>
+                    </div>
+                    <h3>Honey Quality Testing Guide: COA Parameters &amp; Lab Methods</h3>
+                    <p>Essential guide for honey importers: how to read a COA, key lab tests (HMF, diastase, antibiotic residues), and regulatory requirements by market.</p>
+                    <a href="blog/honey-quality-testing-importer-guide.html" class="blog-read-more">Read More &rarr;</a>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-meta">
+                        <span class="blog-category">Product</span>
+                        <span>Jul 8, 2026</span>
+                    </div>
+                    <h3>Bee Pollen Wholesale from China: Types, Grades &amp; Sourcing</h3>
+                    <p>Everything importers need to know about bee pollen — feeding grade, human consumption grade, and broken cell wall pollen powder.</p>
+                    <a href="blog/bee-pollen-wholesale-from-china.html" class="blog-read-more">Read More &rarr;</a>
+                </article>
+            </div>
+
+            <div class="blog-view-all">
+                <a href="blog.html" class="btn btn-primary" style="display:inline-flex;">View All Articles</a>
+            </div>
         </section>
 
-        <!-- Final CTA -->
-        <section class="final-cta-section">
-            <h2>Ready to Source Bee Products from China?</h2>
-            <p>Tell us what you need — product type, quantity, destination — and we'll get back to you within 24 hours with a quote.</p>
-            <a href="contact.html" class="cta-button cta-primary">Request a Free Quote</a>
-            <div class="contact-info">
-                <p>Email: <a href="mailto:shijd@mielhealth.com">shijd@mielhealth.com</a> &nbsp;|&nbsp; Phone: <a href="tel:+8657188394011">+86 571 88394011</a></p>
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="cta-content">
+                <div class="cta-text">
+                    <h2>Ready to Source Premium Bee Products?</h2>
+                    <p>Tell us what you need — product type, quantity, destination, and any specific requirements — and we'll get back to you within 24 hours with a detailed quote.</p>
+
+                    <div class="cta-contact-info">
+                        <div class="contact-item">
+                            <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6l9-6"/></svg>
+                            <span>Email: <a href="mailto:shijd@mielhealth.com">shijd@mielhealth.com</a></span>
+                        </div>
+                        <div class="contact-item">
+                            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg>
+                            <span>Phone: <a href="tel:+8657188394011">+86 571 88394011</a></span>
+                        </div>
+                        <div class="contact-item">
+                            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            <span>Hangzhou, Zhejiang, China</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cta-form">
+                    <h3>Request a Free Quote</h3>
+                    <form action="https://formspree.io/f/xjgwydwd" method="POST">
+                        <input type="hidden" name="_subject" value="New Quote Request from mielhealth.com">
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Your Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="_replyto" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company">Company</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="product">Product of Interest *</label>
+                            <select id="product" name="product" required>
+                                <option value="">Select a product</option>
+                                <option value="honey">Honey</option>
+                                <option value="royal-jelly">Royal Jelly</option>
+                                <option value="propolis">Propolis</option>
+                                <option value="bee-pollen">Bee Pollen</option>
+                                <option value="beeswax">Beeswax</option>
+                                <option value="beeswax-candles">Beeswax Candles</option>
+                                <option value="multiple">Multiple Products</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message / Requirements</label>
+                            <textarea id="message" name="message" placeholder="Tell us about your requirements, target quantity, destination country..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Send Inquiry</button>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
@@ -762,17 +1315,15 @@
         <p>&copy; 2026 HANGZHOU AADON TRADING CO., LTD. All Rights Reserved.</p>
     </footer>
 
+    <!-- Back to Top Button -->
     <a href="#" class="back-to-top" aria-label="Back to top">&#8593;</a>
     <script>
     (function() {
         var btn = document.querySelector('.back-to-top');
         if (!btn) return;
         window.addEventListener('scroll', function() {
-            if (window.scrollY > 300) {
-                btn.classList.add('visible');
-            } else {
-                btn.classList.remove('visible');
-            }
+            if (window.scrollY > 300) { btn.classList.add('visible'); }
+            else { btn.classList.remove('visible'); }
         });
         btn.addEventListener('click', function(e) {
             e.preventDefault();
@@ -780,7 +1331,6 @@
         });
     })();
     </script>
-
 
     <!-- Hamburger Menu Script -->
     <script>
@@ -793,7 +1343,6 @@
                 toggle.setAttribute('aria-expanded', isOpen);
             });
 
-            // Close menu when clicking outside
             document.addEventListener('click', function (e) {
                 if (!navLinks.contains(e.target) && !toggle.contains(e.target)) {
                     navLinks.classList.remove('active');
@@ -851,26 +1400,26 @@
         "mainEntity": [
             {
                 "@type": "Question",
-                "name": "What is the minimum order quantity?",
+                "name": "What certifications do you have?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "For most bee products, MOQ starts at 100kg. For beeswax candles, MOQ is 500 pieces. We also offer smaller trial/sample orders to help you evaluate quality before committing."
+                    "text": "Our partner factories hold HACCP, ISO 9001, KOSHER, HALAL, EU Organic, and USDA NOP certifications. COA and test reports are available for all products."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Do you provide product certifications?",
+                "name": "Which countries do you export to?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes. Our partner factories hold HACCP, ISO 9001, KOSHER, HALAL, EU Organic, and USDA NOP certifications. COA and test reports are available for all products."
+                    "text": "We export to markets across 4 continents including the USA, Canada, Japan, South Korea, and Argentina. We handle all export documentation including health certificates and certificate of origin."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Can you arrange shipping to our country?",
+                "name": "How long have you been in the bee products industry?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes. We handle sea freight for bulk orders and can arrange DHL/air freight for small or urgent orders. We provide full export documentation including health certificates and certificate of origin."
+                    "text": "HANGZHOU AADON TRADING CO., LTD. was established in 2004, with over 20 years of experience in bee product export and supply chain management."
                 }
             }
         ]
