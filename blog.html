@@ -38,15 +38,19 @@
             justify-content: center;
             align-items: center;
             padding: 0;
-            margin: 0;
-            position: relative;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border-bottom: 3px solid rgba(255,255,255,0.3);
         }
 
         nav a {
             color: white;
             padding: 14px 20px;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 600;
+            font-size: 0.95rem;
             display: block;
             transition: background-color 0.2s;
         }
@@ -95,7 +99,7 @@
             color: white;
             text-decoration: none;
             white-space: nowrap;
-            font-weight: bold;
+            font-weight: 600;
         }
 
         .dropdown-content a:hover {
@@ -104,6 +108,18 @@
 
         .dropdown:hover .dropdown-content,
         .dropdown:focus-within .dropdown-content {
+            display: block;
+        }
+
+        /* === Banner === */
+        .banner-container {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .banner-img {
+            width: 100%;
+            height: auto;
             display: block;
         }
 
@@ -309,6 +325,7 @@
             padding: 3px;
             background-color: #456a09;
             color: white;
+            font-size: 0.9rem;
             border-top: 3px solid rgba(255,255,255,0.3);
             margin-top: 3px;
         }
@@ -349,6 +366,8 @@
 
         /* === Responsive: 768px === */
         @media (max-width: 768px) {
+            .banner-img { max-height: 200px; object-fit: cover; object-position: left center; }
+
             .nav-toggle {
                 display: block;
             }
@@ -474,6 +493,11 @@
 </head>
 <body>
 
+    <!-- Banner -->
+    <div class="banner-container">
+        <img src="banner-02.jpg" class="banner-img" alt="HANGZHOU AADON TRADING CO., LTD. - Premium Bee Products Supplier" fetchpriority="high">
+    </div>
+
     <!-- Navigation -->
     <nav aria-label="Main navigation">
         <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">&#9776;</button>
@@ -485,14 +509,14 @@
                 <a href="javascript:void(0)" aria-haspopup="true" aria-expanded="false">PRODUCTS &#9662;</a>
                 <div class="dropdown-content" role="menu">
                     <a href="bee-products.html" role="menuitem">Bee Products</a>
-                    <a href="beeswax-candles.html" role="menuitem">Beeswax Candle</a>
+                    <a href="beeswax-candles.html" role="menuitem">Beeswax Candles</a>
                 </div>
             </div>
 
             <a href="about.html">ABOUT</a>
-            <a href="contact.html">CONTACT</a>
-            <a href="faq.html">FAQ</a>
             <a href="blog.html">BLOG</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">CONTACT</a>
         </div>
     </nav>
 

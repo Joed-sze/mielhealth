@@ -6,7 +6,6 @@
     <meta name="description" content="Learn how to import bee products from China with this complete guide. Covers supplier sourcing, quality standards, certifications, regulations, shipping, and step-by-step import process.">
     <meta name="keywords" content="import bee products from China, Chinese honey supplier, royal jelly import, propolis import, bee pollen wholesale, beeswax import China, China bee products guide, bee product sourcing, Chinese bee product manufacturers, import regulations honey, HACCP honey, organic bee products China">
     <meta name="author" content="HANGZHOU AADON TRADING CO., LTD.">
-    <meta name="robots" content="index, follow">
     <meta property="og:title" content="How to Import Bee Products from China: A Complete Guide for Buyers">
     <meta property="og:description" content="A comprehensive guide covering everything you need to know about importing honey, royal jelly, propolis, bee pollen, and beeswax from China.">
     <meta property="og:type" content="article">
@@ -52,26 +51,30 @@
 
         /* === Navigation === */
         nav {
-            background-color: #507a0c;
+            background-color: #456a09;
             display: flex;
             justify-content: center;
             align-items: center;
             padding: 0;
             margin: 0;
-            position: relative;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border-bottom: 3px solid rgba(255,255,255,0.3);
         }
 
         nav a {
             color: white;
             padding: 14px 20px;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 600;
             display: block;
             transition: background-color 0.2s;
         }
 
         nav a:hover {
-            background-color: #456a09;
+            background-color: #3a5a07;
         }
 
         /* Hamburger button (mobile only) */
@@ -463,6 +466,8 @@
             background-color: #456a09;
             color: white;
             margin-top: 3px;
+            border-top: 3px solid rgba(255,255,255,0.3);
+            font-size: 0.9rem;
         }
 
         /* === Responsive === */
@@ -598,12 +603,12 @@
 
     <!-- Banner -->
     <div class="banner-container">
-        <img src="../banner-02.jpg" class="banner-img" alt="HANGZHOU AADON TRADING CO., LTD. - Premium Bee Products Supplier" loading="lazy">
+        <img src="../banner-02.jpg" class="banner-img" alt="HANGZHOU AADON TRADING CO., LTD. - Premium Bee Products Supplier" fetchpriority="high">
     </div>
 
     <!-- Navigation -->
     <nav aria-label="Main navigation">
-        <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">&#9776;</button>
+        <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" onclick="document.querySelector('.nav-links').classList.toggle('active')">&#9776;</button>
 
         <div class="nav-links">
             <a href="../index.html">HOME</a>
@@ -617,9 +622,9 @@
             </div>
 
             <a href="../about.html">ABOUT</a>
-            <a href="../contact.html">CONTACT</a>
-            <a href="../faq.html">FAQ</a>
             <a href="../blog.html">BLOG</a>
+            <a href="../faq.html">FAQ</a>
+            <a href="../contact.html">CONTACT</a>
         </div>
     </nav>
 

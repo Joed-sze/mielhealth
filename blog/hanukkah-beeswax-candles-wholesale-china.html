@@ -44,14 +44,18 @@
             justify-content: center;
             align-items: center;
             padding: 0;
-            position: relative;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border-bottom: 3px solid rgba(255,255,255,0.3);
         }
 
         nav a {
             color: white;
             padding: 14px 20px;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 600;
             display: block;
             transition: background-color 0.2s;
         }
@@ -612,9 +616,9 @@
     </div>
 
     <nav aria-label="Main navigation">
-        <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">&#9776;</button>
+        <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" onclick="document.querySelector('.nav-links').classList.toggle('active')">&#9776;</button>
         <div class="nav-links">
-            <a href="../index.html" aria-expanded="false">HOME</a>
+            <a href="../index.html">HOME</a>
             <div class="dropdown">
                 <a href="javascript:void(0)" aria-haspopup="true" aria-expanded="false">PRODUCTS &#9662;</a>
                 <div class="dropdown-content" role="menu">
@@ -622,10 +626,10 @@
                     <a href="../beeswax-candles.html" role="menuitem">Beeswax Candle</a>
                 </div>
             </div>
-            <a href="../about.html" aria-expanded="false">ABOUT</a>
-            <a href="../contact.html" aria-expanded="false">CONTACT</a>
-            <a href="../faq.html" aria-expanded="false">FAQ</a>
-            <a href="../blog.html" aria-expanded="false">BLOG</a>
+            <a href="../about.html">ABOUT</a>
+            <a href="../blog.html">BLOG</a>
+            <a href="../faq.html">FAQ</a>
+            <a href="../contact.html">CONTACT</a>
         </div>
     </nav>
 

@@ -44,26 +44,30 @@
 
         /* === Navigation === */
         nav {
-            background-color: #507a0c;
+            background-color: #456a09;
             display: flex;
             justify-content: center;
             align-items: center;
             padding: 0;
-            margin: 0;
-            position: relative;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border-bottom: 3px solid rgba(255,255,255,0.3);
         }
 
         nav a {
             color: white;
             padding: 14px 20px;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 600;
+            font-size: 0.95rem;
             display: block;
             transition: background-color 0.2s;
         }
 
         nav a:hover {
-            background-color: #456a09;
+            background-color: #3a5a07;
         }
 
         .nav-toggle {
@@ -94,7 +98,7 @@
         .dropdown-content {
             display: none;
             position: absolute;
-            background-color: #507a0c;
+            background-color: #456a09;
             min-width: 180px;
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
             z-index: 100;
@@ -108,11 +112,11 @@
             color: white;
             text-decoration: none;
             white-space: nowrap;
-            font-weight: bold;
+            font-weight: 600;
         }
 
         .dropdown-content a:hover {
-            background-color: #456a09;
+            background-color: #3a5a07;
         }
 
         .dropdown:hover .dropdown-content,
@@ -277,11 +281,15 @@
             padding: 3px;
             background-color: #456a09;
             color: white;
+            font-size: 0.9rem;
+            border-top: 3px solid rgba(255,255,255,0.3);
             margin-top: 3px;
         }
 
         /* === Responsive === */
         @media (max-width: 768px) {
+            .banner-img { max-height: 200px; object-fit: cover; object-position: left center; }
+
             .nav-toggle {
                 display: block;
             }
@@ -383,7 +391,7 @@
 
     <!-- Banner -->
     <div class="banner-container">
-        <img src="banner-02.jpg" class="banner-img" alt="FAQ - HANGZHOU AADON TRADING CO., LTD." loading="lazy">
+        <img src="banner-02.jpg" class="banner-img" alt="FAQ - HANGZHOU AADON TRADING CO., LTD." fetchpriority="high">
     </div>
 
     <!-- Navigation -->
@@ -397,14 +405,14 @@
                 <a href="javascript:void(0)" aria-haspopup="true" aria-expanded="false">PRODUCTS &#9662;</a>
                 <div class="dropdown-content" role="menu">
                     <a href="bee-products.html" role="menuitem">Bee Products</a>
-                    <a href="beeswax-candles.html" role="menuitem">Beeswax Candle</a>
+                    <a href="beeswax-candles.html" role="menuitem">Beeswax Candles</a>
                 </div>
             </div>
 
             <a href="about.html">ABOUT</a>
-            <a href="contact.html">CONTACT</a>
-            <a href="faq.html">FAQ</a>
             <a href="blog.html">BLOG</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">CONTACT</a>
         </div>
     </nav>
 
