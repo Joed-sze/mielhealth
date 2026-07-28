@@ -1352,6 +1352,17 @@
         });
     </script>
 
+    <!-- Disable right-click on images -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('img').forEach(function(img) {
+                img.addEventListener('contextmenu', function(e) {
+                    e.preventDefault();
+                });
+            });
+        });
+    </script>
+
     <!-- Tidio Chat Widget -->
     <script src="//code.tidio.co/yafy09blyzapqjpjpvf8k9b7hudh3dq8.js" async></script>
 
