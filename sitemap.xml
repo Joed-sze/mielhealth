@@ -38,7 +38,7 @@
     </url>
     <url>
         <loc>https://www.mielhealth.com/blog.html</loc>
-        <lastmod>2026-07-10</lastmod>
+        <lastmod>2026-07-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -99,6 +99,12 @@
     <url>
         <loc>https://www.mielhealth.com/blog/how-to-choose-bee-products-supplier-china.html</loc>
         <lastmod>2026-07-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.mielhealth.com/blog/how-to-source-bulk-honey-from-china.html</loc>
+        <lastmod>2026-07-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
