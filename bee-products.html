@@ -321,6 +321,18 @@
             .product-card {
                 width: 240px;
             }
+
+            section[style*="grid-template-columns: repeat(3"] {
+                grid-template-columns: 1fr !important;
+            }
+
+            .feature-grid-3 {
+                grid-template-columns: 1fr !important;
+            }
+
+            .guides-grid-2 {
+                grid-template-columns: 1fr !important;
+            }
         }
 
         @media (max-width: 480px) {
@@ -545,6 +557,63 @@
                     </div>
                 </article>
             </div>
+
+            <!-- Why Choose Us Section -->
+            <section style="margin: 3rem 0 1rem; padding-top: 2rem; border-top: 2px solid #e6dfd3;">
+                <h2 style="font-size: 1.6rem; color: #1a4a1a; margin: 0 0 1rem; text-align: center;">Why Choose Aadon Trading for Bulk Bee Products?</h2>
+                <p style="max-width: 900px; margin: 0 auto 1.5rem; text-align: center; color: #555; font-size: 1.05rem;">
+                    With over 20 years of experience in the bee product export industry, we combine direct sourcing, rigorous quality control, and reliable logistics to deliver consistent value to our global partners.
+                </p>
+            </section>
+
+            <section class="feature-grid-3" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-bottom: 2.5rem;">
+                <div style="background: #faf7f0; border-radius: 10px; padding: 1.5rem; border-top: 4px solid #507a0c;">
+                    <h3 style="color: #1a4a1a; margin-top: 0; font-size: 1.1rem;">Direct Sourcing Network</h3>
+                    <p style="color: #555; font-size: 0.95rem; margin-bottom: 0;">We partner directly with beekeeping cooperatives across China's major production regions &mdash; Sichuan, Northeast China, and the Yangtze River basin &mdash; ensuring competitive pricing and full traceability from hive to shipment.</p>
+                </div>
+                <div style="background: #faf7f0; border-radius: 10px; padding: 1.5rem; border-top: 4px solid #507a0c;">
+                    <h3 style="color: #1a4a1a; margin-top: 0; font-size: 1.1rem;">Certified Quality Control</h3>
+                    <p style="color: #555; font-size: 0.95rem; margin-bottom: 0;">Our partner facilities hold HACCP, ISO 9001, KOSHER, HALAL, EU Organic, and NOP certifications. Every batch comes with a full COA covering moisture, enzyme activity, HMF, heavy metals, and antibiotic residue testing.</p>
+                </div>
+                <div style="background: #faf7f0; border-radius: 10px; padding: 1.5rem; border-top: 4px solid #507a0c;">
+                    <h3 style="color: #1a4a1a; margin-top: 0; font-size: 1.1rem;">Strategic Port Access</h3>
+                    <p style="color: #555; font-size: 0.95rem; margin-bottom: 0;">Headquartered in Hangzhou, near Shanghai and Ningbo-Zhoushan ports &mdash; two of the world's busiest container ports. Fast loading, competitive freight rates, and flexible shipping options for every order size.</p>
+                </div>
+            </section>
+
+            <!-- Quality & Specifications Section -->
+            <section style="margin: 3rem 0 1rem; padding-top: 2rem; border-top: 2px solid #e6dfd3;">
+                <h2 style="font-size: 1.6rem; color: #1a4a1a; margin: 0 0 1rem; text-align: center;">Quality Standards You Can Rely On</h2>
+                <p style="max-width: 900px; margin: 0 auto 1.5rem; text-align: center; color: #555; font-size: 1.05rem;">
+                    We understand that product consistency is critical for your manufacturing and retail operations. That's why every shipment is backed by comprehensive testing and full documentation.
+                </p>
+                <p style="max-width: 900px; margin: 0 auto; text-align: center; color: #555; font-size: 1rem;">
+                    For detailed quality parameters and testing methods, see our guide: <a href="blog/honey-quality-testing-importer-guide.html" style="color: #507a0c; font-weight: 600; text-decoration: none;">Honey Quality Testing &amp; COA Parameters Guide</a>
+                </p>
+            </section>
+
+            <!-- Sourcing Guides Section -->
+            <section style="margin: 3rem 0 1rem; padding-top: 2rem; border-top: 2px solid #e6dfd3;">
+                <h2 style="font-size: 1.6rem; color: #1a4a1a; margin: 0 0 1.5rem; text-align: center;">Sourcing Guides for Importers</h2>
+                <div class="guides-grid-2" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem;">
+                    <a href="blog/how-to-source-bulk-honey-from-china.html" style="background: #faf7f0; border-radius: 8px; padding: 1.25rem; text-decoration: none; color: inherit; border-left: 4px solid #507a0c; transition: transform 0.2s, box-shadow 0.2s; display: block;">
+                        <h3 style="color: #1a4a1a; margin-top: 0; font-size: 1.1rem;">How to Source Bulk Honey from China</h3>
+                        <p style="color: #555; font-size: 0.9rem; margin-bottom: 0;">Complete guide covering producing regions, honey varieties, quality standards, procurement steps, and customs documentation.</p>
+                    </a>
+                    <a href="blog/how-to-import-bee-products-from-china.html" style="background: #faf7f0; border-radius: 8px; padding: 1.25rem; text-decoration: none; color: inherit; border-left: 4px solid #507a0c; transition: transform 0.2s, box-shadow 0.2s; display: block;">
+                        <h3 style="color: #1a4a1a; margin-top: 0; font-size: 1.1rem;">Complete Bee Products Import Guide</h3>
+                        <p style="color: #555; font-size: 0.9rem; margin-bottom: 0;">Step-by-step guide for importing all bee products from China &mdash; MOQ, payment terms, shipping, and documentation.</p>
+                    </a>
+                    <a href="blog/propolis-sourcing-from-china.html" style="background: #faf7f0; border-radius: 8px; padding: 1.25rem; text-decoration: none; color: inherit; border-left: 4px solid #507a0c; transition: transform 0.2s, box-shadow 0.2s; display: block;">
+                        <h3 style="color: #1a4a1a; margin-top: 0; font-size: 1.1rem;">Propolis Wholesale Buyer's Guide</h3>
+                        <p style="color: #555; font-size: 0.9rem; margin-bottom: 0;">Refined propolis, clean blocks, and powder &mdash; quality parameters, COA specs, applications, and shipping.</p>
+                    </a>
+                    <a href="blog/how-to-choose-bee-products-supplier-china.html" style="background: #faf7f0; border-radius: 8px; padding: 1.25rem; text-decoration: none; color: inherit; border-left: 4px solid #507a0c; transition: transform 0.2s, box-shadow 0.2s; display: block;">
+                        <h3 style="color: #1a4a1a; margin-top: 0; font-size: 1.1rem;">Supplier Selection Checklist</h3>
+                        <p style="color: #555; font-size: 0.9rem; margin-bottom: 0;">How to evaluate and verify Chinese bee product suppliers &mdash; red flags, green flags, and the questions every buyer should ask.</p>
+                    </a>
+                </div>
+            </section>
 
             <p class="cta-text">
                 Can't find what you need? <a href="contact.html" class="cta-link">Contact us</a> for custom product requests.
