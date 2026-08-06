@@ -143,46 +143,82 @@
             margin-bottom: 2rem;
         }
 
-        .card-item {
-            background: #faf7f0;
-            border-radius: 10px;
+        .product-card {
+            background: white;
+            border-radius: 16px;
             overflow: hidden;
-            border-top: 4px solid #507a0c;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+            transition: all 0.3s ease;
             display: flex;
             flex-direction: column;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
 
-        .card-item:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+        .product-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 32px rgba(0,0,0,0.12);
         }
 
-        .card-item img {
+        .product-image {
+            height: 200px;
+            background: linear-gradient(135deg, #f5e6c4 0%, #faf5ec 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .product-image img {
             width: 100%;
-            height: 220px;
-            object-fit: contain;
-            background-color: #faf7f0;
+            height: 100%;
+            object-fit: cover;
             display: block;
         }
 
-        .card-item h3 {
-            color: #1a4a1a;
-            font-size: 1.2rem;
-            margin: 1rem 1.25rem 0.5rem;
+        .product-image::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 40px;
+            background: linear-gradient(to top, rgba(0,0,0,0.1), transparent);
+            pointer-events: none;
         }
 
-        .card-item p {
-            color: #555;
-            font-size: 0.9rem;
-            margin: 0 1.25rem 1rem;
+        .product-body {
+            padding: 24px;
             flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-category {
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: #507a0c;
+            margin-bottom: 8px;
+        }
+
+        .product-body h3 {
+            font-size: 1.25rem;
+            margin: 0 0 10px 0;
+            color: #1a3a1a;
+        }
+
+        .product-body p {
+            font-size: 0.92rem;
+            color: #666;
+            margin: 0 0 16px 0;
             line-height: 1.6;
+            flex-grow: 1;
         }
 
         .btn-quote {
             display: block;
-            margin: 0 1.25rem 1.25rem;
+            margin-top: auto;
             padding: 10px;
             background: #507a0c;
             color: white;
@@ -669,25 +705,40 @@
                 </p>
 
                 <div class="pollen-cards">
-                    <article class="card-item">
-                        <img src="bee-product/pollen-01.jpg" alt="Bee pollen for animal feeding and hive nutrition" loading="lazy">
-                        <h3>Pollen for Feeding</h3>
-                        <p>Bee pollen for animal and beekeeping use. High nutritional value to support hive health, boost colony strength, and improve overwintering survival rates.</p>
-                        <a href="contact.html" class="btn-quote">Get Quote</a>
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="images/product-bee-pollen-feed-grade-pro.jpg" alt="Bee pollen for animal feeding and hive nutrition" loading="lazy">
+                        </div>
+                        <div class="product-body">
+                            <span class="product-category">Bee Pollen</span>
+                            <h3>Pollen for Feeding</h3>
+                            <p>Bee pollen for animal and beekeeping use. High nutritional value to support hive health, boost colony strength, and improve overwintering survival rates.</p>
+                            <a href="contact.html" class="btn-quote">Get Quote</a>
+                        </div>
                     </article>
 
-                    <article class="card-item">
-                        <img src="bee-product/pollen-02.jpeg" alt="Food-grade bee pollen granules for human consumption" loading="lazy">
-                        <h3>Pollen (Human Grade)</h3>
-                        <p>Food-grade bee pollen granules for human consumption. Rich in protein, vitamins, minerals and antioxidants. Ideal for dietary supplements, functional foods and natural health products.</p>
-                        <a href="contact.html" class="btn-quote">Get Quote</a>
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="images/product-bee-pollen-granules-pro.jpg" alt="Food-grade bee pollen granules for human consumption" loading="lazy">
+                        </div>
+                        <div class="product-body">
+                            <span class="product-category">Bee Pollen</span>
+                            <h3>Pollen (Human Grade)</h3>
+                            <p>Food-grade bee pollen granules for human consumption. Rich in protein, vitamins, minerals and antioxidants. Ideal for dietary supplements, functional foods and natural health products.</p>
+                            <a href="contact.html" class="btn-quote">Get Quote</a>
+                        </div>
                     </article>
 
-                    <article class="card-item">
-                        <img src="bee-product/pollen-03.jpeg" alt="Finely ground pollen powder for supplements and functional foods" loading="lazy">
-                        <h3>Broken Cell Wall Pollen Powder</h3>
-                        <p>Finely ground pollen powder with high wall-broken rate for enhanced bioavailability. Easy to incorporate into capsules, tablets, functional foods and beauty formulations.</p>
-                        <a href="contact.html" class="btn-quote">Get Quote</a>
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="images/product-bee-pollen-powder-pro.jpg" alt="Finely ground pollen powder for supplements and functional foods" loading="lazy">
+                        </div>
+                        <div class="product-body">
+                            <span class="product-category">Bee Pollen</span>
+                            <h3>Broken Cell Wall Pollen Powder</h3>
+                            <p>Finely ground pollen powder with high wall-broken rate for enhanced bioavailability. Easy to incorporate into capsules, tablets, functional foods and beauty formulations.</p>
+                            <a href="contact.html" class="btn-quote">Get Quote</a>
+                        </div>
                     </article>
                 </div>
 
