@@ -143,46 +143,82 @@
             margin-bottom: 2rem;
         }
 
-        .card-item {
-            background: #faf7f0;
-            border-radius: 10px;
+        .product-card {
+            background: white;
+            border-radius: 16px;
             overflow: hidden;
-            border-top: 4px solid #507a0c;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+            transition: all 0.3s ease;
             display: flex;
             flex-direction: column;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
 
-        .card-item:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+        .product-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 32px rgba(0,0,0,0.12);
         }
 
-        .card-item img {
+        .product-image {
+            height: 200px;
+            background: linear-gradient(135deg, #f5e6c4 0%, #faf5ec 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .product-image img {
             width: 100%;
-            height: 220px;
-            object-fit: contain;
-            background-color: #faf7f0;
+            height: 100%;
+            object-fit: cover;
             display: block;
         }
 
-        .card-item h3 {
-            color: #1a4a1a;
-            font-size: 1.2rem;
-            margin: 1rem 1.25rem 0.5rem;
+        .product-image::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 40px;
+            background: linear-gradient(to top, rgba(0,0,0,0.1), transparent);
+            pointer-events: none;
         }
 
-        .card-item p {
-            color: #555;
-            font-size: 0.9rem;
-            margin: 0 1.25rem 1rem;
+        .product-body {
+            padding: 24px;
             flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-category {
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: #507a0c;
+            margin-bottom: 8px;
+        }
+
+        .product-body h3 {
+            font-size: 1.2rem;
+            margin: 0 0 10px 0;
+            color: #1a3a1a;
+        }
+
+        .product-body p {
+            font-size: 0.9rem;
+            color: #666;
+            margin: 0 0 16px 0;
             line-height: 1.6;
+            flex-grow: 1;
         }
 
         .btn-quote {
             display: block;
-            margin: 0 1.25rem 1.25rem;
+            margin-top: auto;
             padding: 10px;
             background: #507a0c;
             color: white;
@@ -603,7 +639,7 @@
                     "@type": "Product",
                     "name": "Clean Propolis",
                     "description": "Cleanly processed propolis blocks. Premium grade suitable for pharmaceutical applications.",
-                    "image": "https://www.mielhealth.com/bee-product/pro-003.jpg",
+                    "image": "https://www.mielhealth.com/images/propolis-blocks-pro.jpg",
                     "brand": {
                         "@type": "Brand",
                         "name": "Aadon Trading"
@@ -618,12 +654,62 @@
                     "@type": "Product",
                     "name": "Propolis Powder",
                     "description": "Water-soluble propolis powder. Easy to formulate into capsules, tablets and functional foods.",
-                    "image": "https://www.mielhealth.com/bee-product/pro-004.jpeg",
+                    "image": "https://www.mielhealth.com/images/propolis-powder-mound-pro.jpg",
                     "brand": {
                         "@type": "Brand",
                         "name": "Aadon Trading"
                     },
                     "category": "Propolis"
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Schema.org: FAQPage -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What forms of propolis do you supply?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We supply three forms of propolis: refined propolis extract (99%+ purity) in blocks, raw propolis blocks (55-60% purity) directly from hives, and water-soluble propolis powder for dietary supplement and food applications."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is the flavonoid content of your propolis?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Our refined propolis extract contains a total flavonoid content of 15-20% (measured as galangin). Raw propolis blocks contain 5-8% flavonoids. Propolis powder is standardized to 5-10% flavonoid content depending on the application."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is the MOQ for bulk propolis?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "For refined propolis extract (99%+), the MOQ is 25kg. For raw propolis blocks, the MOQ is 100kg. For water-soluble propolis powder, the MOQ is 50kg. Custom concentrations and packaging are available upon request."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How is propolis tested for purity and quality?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Our propolis is tested for total flavonoid content, heavy metals (lead, arsenic, mercury, cadmium), pesticide residues, and microbial contamination. Refined extract is additionally tested for wax content and solvent residues to ensure 99%+ purity."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is the difference between refined propolis extract and raw propolis blocks?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Refined propolis extract (99%+) is processed to remove beeswax and impurities, resulting in a concentrated form ideal for pharmaceutical and supplement applications. Raw propolis blocks (55-60% purity) are unprocessed, containing natural beeswax and bee particles, suitable for further extraction or traditional use."
                 }
             }
         ]
@@ -669,25 +755,40 @@
                 </p>
 
                 <div class="propolis-cards">
-                    <article class="card-item">
-                        <img src="bee-product/pro-002.jpg" alt="Refined propolis extract for immune support and natural health products" loading="lazy">
-                        <h3>Refined Propolis Extract</h3>
-                        <p>High-quality refined propolis extract with standardized flavonoid content. Known for natural antibacterial and immune-supporting properties. Ideal for tinctures, sprays, and concentrated supplement formulations.</p>
-                        <a href="contact.html" class="btn-quote">Get Quote</a>
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="images/product-propolis-v8.jpg" alt="Refined propolis 99%+ purity for supplements and natural health products" loading="lazy">
+                        </div>
+                        <div class="product-body">
+                            <span class="product-category">Propolis</span>
+                            <h3>Refined Propolis 99%+</h3>
+                            <p>High-purity refined propolis with 99%+ purity and standardized flavonoid content. Ideal for supplement formulations, tinctures, and concentrated health products.</p>
+                            <a href="contact.html" class="btn-quote">Get Quote</a>
+                        </div>
                     </article>
 
-                    <article class="card-item">
-                        <img src="bee-product/pro-003.jpg" alt="Clean propolis blocks - premium grade for pharmaceutical applications" loading="lazy">
-                        <h3>Clean Propolis Blocks</h3>
-                        <p>Cleanly processed propolis blocks in premium grade. Carefully filtered and purified, suitable for pharmaceutical applications, high-end cosmetics, and professional compounding.</p>
-                        <a href="contact.html" class="btn-quote">Get Quote</a>
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="images/propolis-blocks-pro.jpg" alt="Raw propolis blocks 55-60% purity for pharmaceutical applications" loading="lazy">
+                        </div>
+                        <div class="product-body">
+                            <span class="product-category">Propolis</span>
+                            <h3>Raw Propolis Blocks (55-60% Purity)</h3>
+                            <p>Cleanly processed raw propolis blocks with 55-60% purity. Suitable for pharmaceutical applications, cosmetic formulations, and further processing.</p>
+                            <a href="contact.html" class="btn-quote">Get Quote</a>
+                        </div>
                     </article>
 
-                    <article class="card-item">
-                        <img src="bee-product/pro-004.jpeg" alt="Water-soluble propolis powder for capsules, tablets and functional foods" loading="lazy">
-                        <h3>Water-Soluble Propolis Powder</h3>
-                        <p>Water-soluble propolis powder for easy formulation. Perfect for capsules, tablets, functional foods, beverages, and cosmetic products where water solubility is required.</p>
-                        <a href="contact.html" class="btn-quote">Get Quote</a>
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="images/propolis-powder-mound-pro.jpg" alt="Propolis powder for capsules, tablets and functional foods" loading="lazy">
+                        </div>
+                        <div class="product-body">
+                            <span class="product-category">Propolis</span>
+                            <h3>Propolis Powder</h3>
+                            <p>Propolis powder for easy formulation. Perfect for capsules, tablets, functional foods, and cosmetic products.</p>
+                            <a href="contact.html" class="btn-quote">Get Quote</a>
+                        </div>
                     </article>
                 </div>
 

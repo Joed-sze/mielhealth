@@ -14,8 +14,14 @@
     <meta property="og:title" content="Wholesale Bee Products - Honey, Royal Jelly, Propolis & Pollen | Aadon Trading">
     <meta property="og:description" content="Premium Chinese wholesale bee products supplier since 2004. Bulk honey, fresh royal jelly, propolis & bee pollen.">
     <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.mielhealth.com/banner-02.jpg">
+    <meta property="og:site_name" content="Miel Health - HANGZHOU AADON TRADING CO., LTD.">
     <meta property="og:url" content="https://www.mielhealth.com/bee-products.html">
-    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Wholesale Bee Products - Honey, Royal Jelly, Propolis & Pollen | Aadon Trading">
+    <meta name="twitter:description" content="Premium Chinese wholesale bee products supplier since 2004. Bulk honey, fresh royal jelly, propolis & bee pollen.">
+    <meta name="twitter:image" content="https://www.mielhealth.com/banner-02.jpg">
+
     <!-- ========== 规范链接 ========== -->
     <link rel="canonical" href="https://www.mielhealth.com/bee-products.html">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -37,29 +43,25 @@
         }
 
         nav {
-            background-color: #456a09;
+            background-color: #507a0c;
             display: flex;
             justify-content: center;
             align-items: center;
             padding: 0;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            border-bottom: 3px solid rgba(255,255,255,0.3);
+            margin: 0;
+            position: relative;
         }
 
         nav a {
             color: white;
             padding: 14px 20px;
             text-decoration: none;
-            font-weight: 600;
-            font-size: 0.95rem;
+            font-weight: bold;
             display: block;
             transition: background-color 0.2s;
         }
 
-        nav a:hover { background-color: #3a5a07; }
+        nav a:hover { background-color: #456a09; }
 
         .nav-toggle {
             display: none;
@@ -87,7 +89,7 @@
         .dropdown-content {
             display: none;
             position: absolute;
-            background-color: #456a09;
+            background-color: #507a0c;
             min-width: 180px;
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
             z-index: 100;
@@ -101,10 +103,10 @@
             color: white;
             text-decoration: none;
             white-space: nowrap;
-            font-weight: 600;
+            font-weight: bold;
         }
 
-        .dropdown-content a:hover { background-color: #3a5a07; }
+        .dropdown-content a:hover { background-color: #456a09; }
 
         .dropdown:hover .dropdown-content,
         .dropdown:focus-within .dropdown-content {
@@ -198,9 +200,8 @@
         .product-image {
             margin: 15px auto 10px;
             max-width: 70%;
-            height: 180px;
-            object-fit: contain;
-            background-color: white;
+            height: 160px;
+            object-fit: cover;
             border-radius: 8px;
             display: block;
         }
@@ -277,11 +278,9 @@
 
         footer {
             text-align: center;
-            padding: 3px;
+            padding: 20px 10px;
             background-color: #456a09;
             color: white;
-            font-size: 0.9rem;
-            border-top: 3px solid rgba(255,255,255,0.3);
             margin-top: 3px;
         }
         footer a {
@@ -290,7 +289,7 @@
         }
 
         @media (max-width: 768px) {
-            .banner-img { max-height: 200px; object-fit: contain; object-position: left center; }
+            .banner-img { max-height: 300px; object-fit: contain; }
 
             .nav-toggle { display: block; }
 
@@ -322,18 +321,6 @@
             .product-card {
                 width: 240px;
             }
-
-            section[style*="grid-template-columns: repeat(3"] {
-                grid-template-columns: 1fr !important;
-            }
-
-            .feature-grid-3 {
-                grid-template-columns: 1fr !important;
-            }
-
-            .guides-grid-2 {
-                grid-template-columns: 1fr !important;
-            }
         }
 
         @media (max-width: 480px) {
@@ -347,7 +334,7 @@
         .back-to-top {
             position: fixed;
             bottom: 30px;
-            left: 30px;
+            right: 30px;
             width: 44px;
             height: 44px;
             border-radius: 50%;
@@ -377,7 +364,7 @@
         @media (max-width: 480px) {
             .back-to-top {
                 bottom: 20px;
-                left: 20px;
+                right: 20px;
                 width: 38px;
                 height: 38px;
                 font-size: 1rem;
@@ -396,7 +383,7 @@
 <body>
 
     <div class="banner-container">
-        <img src="banner-02.jpg" class="banner-img" alt="Premium bee products wholesale supplier - honey, royal jelly, propolis and pollen from China" fetchpriority="high">
+        <img src="banner-02.jpg" class="banner-img" alt="Premium bee products wholesale supplier - honey, royal jelly, propolis and pollen from China" loading="lazy">
     </div>
 
     <nav aria-label="Main navigation">
@@ -407,18 +394,13 @@
                 <a href="javascript:void(0)" aria-haspopup="true" aria-expanded="false">PRODUCTS &#9662;</a>
                 <div class="dropdown-content" role="menu">
                     <a href="bee-products.html" role="menuitem">Bee Products</a>
-                    <a href="honey.html" role="menuitem">Honey</a>
-                    <a href="beeswax.html" role="menuitem">Beeswax</a>
-                    <a href="bee-pollen.html" role="menuitem">Bee Pollen</a>
-                    <a href="royal-jelly.html" role="menuitem">Royal Jelly</a>
-                    <a href="propolis.html" role="menuitem">Propolis</a>
-                    <a href="beeswax-candles.html" role="menuitem">Beeswax Candles</a>
+                    <a href="beeswax-candles.html" role="menuitem">Beeswax Candle</a>
                 </div>
             </div>
             <a href="about.html">ABOUT</a>
-            <a href="blog.html">BLOG</a>
-            <a href="faq.html">FAQ</a>
             <a href="contact.html">CONTACT</a>
+            <a href="faq.html">FAQ</a>
+            <a href="blog.html">BLOG</a>
         </div>
     </nav>
 
@@ -432,6 +414,8 @@
                 <strong>beeswax</strong> for dietary supplements, pharmaceuticals, food processing, and cosmetic industries. 
                 All products are rigorously tested for purity, potency, and safety.
             </p>
+
+            <h2 style="font-size: 1.4rem; color: #1a4a1a; margin: 2rem 0 1rem;">Complete Product Catalog</h2>
 
             <div class="category-filters">
                 <button class="filter-btn active" data-category="all">All Products</button>
@@ -447,7 +431,7 @@
                     <img src="bee-product/honey-01.jpeg" alt="Bulk natural honey wholesale from Chinese supplier" class="product-image" loading="lazy">
                     <div class="product-info">
                         <span class="product-category">Honey</span>
-                        <h3 class="product-name"><a href="honey.html" style="color: inherit; text-decoration: none;">Bulk Honey</a></h3>
+                        <h3 class="product-name">Bulk Honey</h3>
                         <p class="product-desc">Natural raw honey from multiple floral sources. Available in various floral varieties for food and beverage industry.</p>
                         <a href="contact.html" class="btn-quote">Get Quote</a>
                     </div>
@@ -457,7 +441,7 @@
                     <img src="bee-product/honey-02.png" alt="Small bottle honey retail packaging - premium gift quality" class="product-image" loading="lazy">
                     <div class="product-info">
                         <span class="product-category">Honey</span>
-                        <h3 class="product-name"><a href="honey.html" style="color: inherit; text-decoration: none;">Small Bottle Honey</a></h3>
+                        <h3 class="product-name">Small Bottle Honey</h3>
                         <p class="product-desc">Premium packaged honey in retail-ready bottles. Ideal for retail and gift market.</p>
                         <a href="contact.html" class="btn-quote">Get Quote</a>
                     </div>
@@ -467,7 +451,7 @@
                     <img src="bee-product/frj-01.jpeg" alt="Fresh royal jelly - rich in 10-HDA for supplements and cosmetics" class="product-image" loading="lazy">
                     <div class="product-info">
                         <span class="product-category">Royal Jelly</span>
-                        <h3 class="product-name"><a href="royal-jelly.html" style="color: inherit; text-decoration: none;">Fresh Royal Jelly</a></h3>
+                        <h3 class="product-name">Fresh Royal Jelly</h3>
                         <p class="product-desc">100% pure fresh royal jelly. Rich in nutrients, ideal for health supplements and cosmetics.</p>
                         <a href="contact.html" class="btn-quote">Get Quote</a>
                     </div>
@@ -477,7 +461,7 @@
                     <img src="bee-product/rjp-01.jpeg" alt="Royal jelly powder - freeze-dried for capsule manufacturing" class="product-image" loading="lazy">
                     <div class="product-info">
                         <span class="product-category">Royal Jelly</span>
-                        <h3 class="product-name"><a href="royal-jelly.html" style="color: inherit; text-decoration: none;">Royal Jelly Powder</a></h3>
+                        <h3 class="product-name">Royal Jelly Powder</h3>
                         <p class="product-desc">Freeze-dried royal jelly powder. Easy to store and transport, suitable for capsule production.</p>
                         <a href="contact.html" class="btn-quote">Get Quote</a>
                     </div>
@@ -487,7 +471,7 @@
                     <img src="bee-product/fl-01.jpeg" alt="Refined beeswax blocks for cosmetics and candle manufacturing" class="product-image" loading="lazy">
                     <div class="product-info">
                         <span class="product-category">Beeswax</span>
-                        <h3 class="product-name"><a href="beeswax.html" style="color: inherit; text-decoration: none;">Refined Beeswax</a></h3>
+                        <h3 class="product-name">Refined Beeswax</h3>
                         <p class="product-desc">High-purity refined beeswax blocks. Perfect raw material for cosmetics and candle manufacturing.</p>
                         <a href="contact.html" class="btn-quote">Get Quote</a>
                     </div>
@@ -497,7 +481,7 @@
                     <img src="bee-product/fl-02.jpeg" alt="Beeswax pellets - easy to melt for cosmetic formulations" class="product-image" loading="lazy">
                     <div class="product-info">
                         <span class="product-category">Beeswax</span>
-                        <h3 class="product-name"><a href="beeswax.html" style="color: inherit; text-decoration: none;">Beeswax Pellet</a></h3>
+                        <h3 class="product-name">Beeswax Pellet</h3>
                         <p class="product-desc">Easy-to-use beeswax pellets. Ideal for cosmetic formulations and small-scale production.</p>
                         <a href="contact.html" class="btn-quote">Get Quote</a>
                     </div>
@@ -507,7 +491,7 @@
                     <img src="bee-product/pollen-01.jpg" alt="Bee pollen for animal feeding and hive nutrition" class="product-image" loading="lazy">
                     <div class="product-info">
                         <span class="product-category">Pollen</span>
-                        <h3 class="product-name"><a href="bee-pollen.html" style="color: inherit; text-decoration: none;">Pollen for Feeding</a></h3>
+                        <h3 class="product-name">Pollen for Feeding</h3>
                         <p class="product-desc">Bee pollen for animal and beekeeping use. High nutritional value to support hive health.</p>
                         <a href="contact.html" class="btn-quote">Get Quote</a>
                     </div>
@@ -517,7 +501,7 @@
                     <img src="bee-product/pollen-02.jpeg" alt="Food-grade bee pollen for human consumption - rich in protein and antioxidants" class="product-image" loading="lazy">
                     <div class="product-info">
                         <span class="product-category">Pollen</span>
-                        <h3 class="product-name"><a href="bee-pollen.html" style="color: inherit; text-decoration: none;">Pollen (Human Grade)</a></h3>
+                        <h3 class="product-name">Pollen (Human Grade)</h3>
                         <p class="product-desc">Food-grade bee pollen for human consumption. Rich in protein, vitamins and antioxidants.</p>
                         <a href="contact.html" class="btn-quote">Get Quote</a>
                     </div>
@@ -527,7 +511,7 @@
                     <img src="bee-product/pollen-03.jpeg" alt="Finely ground pollen powder for supplements and functional foods" class="product-image" loading="lazy">
                     <div class="product-info">
                         <span class="product-category">Pollen</span>
-                        <h3 class="product-name"><a href="bee-pollen.html" style="color: inherit; text-decoration: none;">Pollen Powder</a></h3>
+                        <h3 class="product-name">Pollen Powder</h3>
                         <p class="product-desc">Finely ground pollen powder. Easy to incorporate into food, supplements and beauty products.</p>
                         <a href="contact.html" class="btn-quote">Get Quote</a>
                     </div>
@@ -537,7 +521,7 @@
                     <img src="bee-product/pro-002.jpg" alt="Refined propolis extract for immune support and natural health products" class="product-image" loading="lazy">
                     <div class="product-info">
                         <span class="product-category">Propolis</span>
-                        <h3 class="product-name"><a href="propolis.html" style="color: inherit; text-decoration: none;">Refined Propolis</a></h3>
+                        <h3 class="product-name">Refined Propolis</h3>
                         <p class="product-desc">High-quality refined propolis extract. Known for natural antibacterial and immune-supporting properties.</p>
                         <a href="contact.html" class="btn-quote">Get Quote</a>
                     </div>
@@ -547,7 +531,7 @@
                     <img src="bee-product/pro-003.jpg" alt="Clean propolis blocks - premium grade for pharmaceutical applications" class="product-image small" loading="lazy">
                     <div class="product-info">
                         <span class="product-category">Propolis</span>
-                        <h3 class="product-name"><a href="propolis.html" style="color: inherit; text-decoration: none;">Clean Propolis</a></h3>
+                        <h3 class="product-name">Clean Propolis</h3>
                         <p class="product-desc">Cleanly processed propolis blocks. Premium grade suitable for pharmaceutical applications.</p>
                         <a href="contact.html" class="btn-quote">Get Quote</a>
                     </div>
@@ -557,70 +541,14 @@
                     <img src="bee-product/pro-004.jpeg" alt="Water-soluble propolis powder for capsules, tablets and functional foods" class="product-image" loading="lazy">
                     <div class="product-info">
                         <span class="product-category">Propolis</span>
-                        <h3 class="product-name"><a href="propolis.html" style="color: inherit; text-decoration: none;">Propolis Powder</a></h3>
+                        <h3 class="product-name">Propolis Powder</h3>
                         <p class="product-desc">Water-soluble propolis powder. Easy to formulate into capsules, tablets and functional foods.</p>
                         <a href="contact.html" class="btn-quote">Get Quote</a>
                     </div>
                 </article>
             </div>
 
-            <!-- Why Choose Us Section -->
-            <section style="margin: 3rem 0 1rem; padding-top: 2rem; border-top: 2px solid #e6dfd3;">
-                <h2 style="font-size: 1.6rem; color: #1a4a1a; margin: 0 0 1rem; text-align: center;">Why Choose Aadon Trading for Bulk Bee Products?</h2>
-                <p style="max-width: 900px; margin: 0 auto 1.5rem; text-align: center; color: #555; font-size: 1.05rem;">
-                    With over 20 years of experience in the bee product export industry, we combine direct sourcing, rigorous quality control, and reliable logistics to deliver consistent value to our global partners.
-                </p>
-            </section>
-
-            <section class="feature-grid-3" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-bottom: 2.5rem;">
-                <div style="background: #faf7f0; border-radius: 10px; padding: 1.5rem; border-top: 4px solid #507a0c;">
-                    <h3 style="color: #1a4a1a; margin-top: 0; font-size: 1.1rem;">Direct Sourcing Network</h3>
-                    <p style="color: #555; font-size: 0.95rem; margin-bottom: 0;">We partner directly with beekeeping cooperatives across China's major production regions &mdash; Sichuan, Northeast China, and the Yangtze River basin &mdash; ensuring competitive pricing and full traceability from hive to shipment.</p>
-                </div>
-                <div style="background: #faf7f0; border-radius: 10px; padding: 1.5rem; border-top: 4px solid #507a0c;">
-                    <h3 style="color: #1a4a1a; margin-top: 0; font-size: 1.1rem;">Certified Quality Control</h3>
-                    <p style="color: #555; font-size: 0.95rem; margin-bottom: 0;">Our partner facilities hold HACCP, ISO 9001, KOSHER, HALAL, EU Organic, and NOP certifications. Every batch comes with a full COA covering moisture, enzyme activity, HMF, heavy metals, and antibiotic residue testing.</p>
-                </div>
-                <div style="background: #faf7f0; border-radius: 10px; padding: 1.5rem; border-top: 4px solid #507a0c;">
-                    <h3 style="color: #1a4a1a; margin-top: 0; font-size: 1.1rem;">Strategic Port Access</h3>
-                    <p style="color: #555; font-size: 0.95rem; margin-bottom: 0;">Headquartered in Hangzhou, near Shanghai and Ningbo-Zhoushan ports &mdash; two of the world's busiest container ports. Fast loading, competitive freight rates, and flexible shipping options for every order size.</p>
-                </div>
-            </section>
-
-            <!-- Quality & Specifications Section -->
-            <section style="margin: 3rem 0 1rem; padding-top: 2rem; border-top: 2px solid #e6dfd3;">
-                <h2 style="font-size: 1.6rem; color: #1a4a1a; margin: 0 0 1rem; text-align: center;">Quality Standards You Can Rely On</h2>
-                <p style="max-width: 900px; margin: 0 auto 1.5rem; text-align: center; color: #555; font-size: 1.05rem;">
-                    We understand that product consistency is critical for your manufacturing and retail operations. That's why every shipment is backed by comprehensive testing and full documentation.
-                </p>
-                <p style="max-width: 900px; margin: 0 auto; text-align: center; color: #555; font-size: 1rem;">
-                    For detailed quality parameters and testing methods, see our guide: <a href="blog/honey-quality-testing-importer-guide.html" style="color: #507a0c; font-weight: 600; text-decoration: none;">Honey Quality Testing &amp; COA Parameters Guide</a>
-                </p>
-            </section>
-
-            <!-- Sourcing Guides Section -->
-            <section style="margin: 3rem 0 1rem; padding-top: 2rem; border-top: 2px solid #e6dfd3;">
-                <h2 style="font-size: 1.6rem; color: #1a4a1a; margin: 0 0 1.5rem; text-align: center;">Sourcing Guides for Importers</h2>
-                <div class="guides-grid-2" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem;">
-                    <a href="blog/how-to-source-bulk-honey-from-china.html" style="background: #faf7f0; border-radius: 8px; padding: 1.25rem; text-decoration: none; color: inherit; border-left: 4px solid #507a0c; transition: transform 0.2s, box-shadow 0.2s; display: block;">
-                        <h3 style="color: #1a4a1a; margin-top: 0; font-size: 1.1rem;">How to Source Bulk Honey from China</h3>
-                        <p style="color: #555; font-size: 0.9rem; margin-bottom: 0;">Complete guide covering producing regions, honey varieties, quality standards, procurement steps, and customs documentation.</p>
-                    </a>
-                    <a href="blog/how-to-import-bee-products-from-china.html" style="background: #faf7f0; border-radius: 8px; padding: 1.25rem; text-decoration: none; color: inherit; border-left: 4px solid #507a0c; transition: transform 0.2s, box-shadow 0.2s; display: block;">
-                        <h3 style="color: #1a4a1a; margin-top: 0; font-size: 1.1rem;">Complete Bee Products Import Guide</h3>
-                        <p style="color: #555; font-size: 0.9rem; margin-bottom: 0;">Step-by-step guide for importing all bee products from China &mdash; MOQ, payment terms, shipping, and documentation.</p>
-                    </a>
-                    <a href="blog/propolis-sourcing-from-china.html" style="background: #faf7f0; border-radius: 8px; padding: 1.25rem; text-decoration: none; color: inherit; border-left: 4px solid #507a0c; transition: transform 0.2s, box-shadow 0.2s; display: block;">
-                        <h3 style="color: #1a4a1a; margin-top: 0; font-size: 1.1rem;">Propolis Wholesale Buyer's Guide</h3>
-                        <p style="color: #555; font-size: 0.9rem; margin-bottom: 0;">Refined propolis, clean blocks, and powder &mdash; quality parameters, COA specs, applications, and shipping.</p>
-                    </a>
-                    <a href="blog/how-to-choose-bee-products-supplier-china.html" style="background: #faf7f0; border-radius: 8px; padding: 1.25rem; text-decoration: none; color: inherit; border-left: 4px solid #507a0c; transition: transform 0.2s, box-shadow 0.2s; display: block;">
-                        <h3 style="color: #1a4a1a; margin-top: 0; font-size: 1.1rem;">Supplier Selection Checklist</h3>
-                        <p style="color: #555; font-size: 0.9rem; margin-bottom: 0;">How to evaluate and verify Chinese bee product suppliers &mdash; red flags, green flags, and the questions every buyer should ask.</p>
-                    </a>
-                </div>
-            </section>
-
+            <h2 style="font-size: 1.3rem; color: #1a4a1a; margin: 2rem 0 0.5rem; text-align: center;">Need a Custom Product?</h2>
             <p class="cta-text">
                 Can't find what you need? <a href="contact.html" class="cta-link">Contact us</a> for custom product requests.
             </p>
@@ -688,17 +616,6 @@
                     }
                 });
             }
-        });
-    </script>
-
-    <!-- Disable right-click on images -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            document.querySelectorAll('img').forEach(function(img) {
-                img.addEventListener('contextmenu', function(e) {
-                    e.preventDefault();
-                });
-            });
         });
     </script>
 
