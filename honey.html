@@ -484,6 +484,39 @@
             opacity: 1;
         }
 
+        /* === Floating Quote Button === */
+        .floating-quote {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #d4a847;
+            color: #1a3a1a;
+            text-decoration: none;
+            padding: 14px 24px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+            z-index: 999;
+            display: none;
+            align-items: center;
+            gap: 8px;
+            transition: background-color 0.2s, transform 0.2s, opacity 0.3s;
+            opacity: 0;
+            white-space: nowrap;
+        }
+
+        .floating-quote:hover {
+            background-color: #c49a3c;
+            transform: translateY(-2px);
+            text-decoration: none;
+        }
+
+        .floating-quote.visible {
+            display: flex;
+            opacity: 1;
+        }
+
         /* === Responsive === */
         @media (max-width: 900px) {
             .apps-grid { grid-template-columns: repeat(2, 1fr); }
@@ -528,12 +561,23 @@
             .apps-grid { grid-template-columns: 1fr; }
             .spec-grid { grid-template-columns: 1fr 1fr; }
             .back-to-top {
-                bottom: 20px;
+                bottom: 80px;
                 left: 20px;
                 width: 38px;
                 height: 38px;
                 font-size: 1rem;
             }
+            .floating-quote {
+                bottom: 0;
+                right: 0;
+                left: 0;
+                border-radius: 0;
+                padding: 14px 20px;
+                justify-content: center;
+                font-size: 1rem;
+                box-shadow: 0 -2px 12px rgba(0,0,0,0.15);
+            }
+            .floating-quote:hover { transform: none; }
         }
     </style>
 
@@ -927,6 +971,7 @@
     </footer>
 
     <button class="back-to-top" id="backToTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" aria-label="Back to top">&#8593;</button>
+    <a href="contact.html?product=honey" class="floating-quote" id="floatingQuote" aria-label="Request a quote">Get a Quote →</a>
 
     <script>
         // Mobile nav toggle
@@ -940,11 +985,14 @@
 
         // Back to top button
         var backToTop = document.getElementById('backToTop');
+        var floatingQuote = document.getElementById('floatingQuote');
         window.addEventListener('scroll', function() {
             if (window.pageYOffset > 300) {
                 backToTop.classList.add('visible');
+                floatingQuote.classList.add('visible');
             } else {
                 backToTop.classList.remove('visible');
+                floatingQuote.classList.remove('visible');
             }
         });
 
