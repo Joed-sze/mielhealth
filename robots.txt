@@ -1,5 +1,5 @@
 # Robots.txt for HANGZHOU AADON TRADING CO., LTD.
-# https://www.mielhealth.com
+# https://mielhealth.com
 
 # Allow all general crawlers
 User-agent: *
@@ -28,4 +28,4 @@ User-agent: cohere-ai
 Allow: /
 
 # Sitemap location
-Sitemap: https://www.mielhealth.com/sitemap.xml
+Sitemap: https://mielhealth.com/sitemap.xml
